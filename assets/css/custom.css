@@ -54,7 +54,8 @@ html {
 
 .footer {
   background: linear-gradient(to right, #090446ff, #3366ffff);
-  transition: background-color 0.5s ease; /* Transition effect */
+  transition: background-color 0.5s ease;
+  /* Transition effect */
 }
 
 .footer a {
@@ -64,8 +65,10 @@ html {
 
 .footer a:hover,
 .footer a:focus {
-  color: inherit; /* Ensure color does not change on hover or focus */
-  text-decoration: none; /* Ensure no underline on hover or focus */
+  color: inherit;
+  /* Ensure color does not change on hover or focus */
+  text-decoration: none;
+  /* Ensure no underline on hover or focus */
 }
 
 
@@ -119,11 +122,14 @@ body {
 .dots-separator {
   width: 50%;
   margin: 3rem auto;
-  height: 20px; /* Height of the dots */
+  height: 20px;
+  /* Height of the dots */
   background-image: radial-gradient(black 5%, transparent 0%);
-  background-size: 20px 30px; /* Size of the dots */
+  background-size: 20px 30px;
+  /* Size of the dots */
   /*background-position: center;*/
-  border: none; /* Remove default line */
+  border: none;
+  /* Remove default line */
   opacity: 1;
 }
 
@@ -177,11 +183,13 @@ h3 {
   border-radius: 50%;
   background-color: #007bff;
   color: #fff;
-  margin-right: 10px; /* Adjust spacing between circles */
+  margin-right: 10px;
+  /* Adjust spacing between circles */
 }
 
 .favicon-circle i {
-  font-size: 24px; /* Adjust icon size */
+  font-size: 24px;
+  /* Adjust icon size */
 }
 
 /***********/
@@ -196,42 +204,52 @@ h3 {
   bottom: 0;
   width: 100%;
   background: #222;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
+
 #cookie-notice a {
   display: inline-block;
   cursor: pointer;
   margin-left: 0.5rem;
 }
+
 #cookie-notice-accept {
-  background-color: #007bff; /* Bootstrap primary button color */
+  background-color: #007bff;
+  /* Bootstrap primary button color */
   color: #fff;
 }
+
 #cookie-notice-essential {
   background-color: transparent;
-  border: 1px solid #007bff; /* Bootstrap outline primary button border color */
+  border: 1px solid #007bff;
+  /* Bootstrap outline primary button border color */
   color: #fff;
 }
+
 #cookie-notice-essential:hover {
   background-color: #007bff;
   color: #fff;
 }
+
 #cookie-notice .btn-link {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
+
 #cookie-notice .btn-link:hover {
   color: #fff;
 }
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 767px) {
   #cookie-notice span {
-      display: block;
-      padding-top: 3px;
-      margin-bottom: 1rem;
+    display: block;
+    padding-top: 3px;
+    margin-bottom: 1rem;
   }
+
   #cookie-notice a {
-      position: relative;
-      bottom: 4px;
+    position: relative;
+    bottom: 4px;
   }
 }
 
@@ -253,31 +271,67 @@ h3 {
 /*********/
 
 .no-link-style {
-  color: inherit; /* Inherit the color from the parent element */
-  text-decoration: none; /* Remove underline */
+  color: inherit;
+  /* Inherit the color from the parent element */
+  text-decoration: none;
+  /* Remove underline */
 }
 
-.no-link-style:hover,
+align-items-center .no-link-style:hover,
 .no-link-style:focus {
-  color: inherit; /* Ensure color does not change on hover or focus */
-  text-decoration: none; /* Ensure no underline on hover or focus */
+  color: inherit;
+  /* Ensure color does not change on hover or focus */
+  text-decoration: none;
+  /* Ensure no underline on hover or focus */
 }
 
-.navbar{
+.navbar {
   box-shadow: 4px 4px 40px 0px #0000000F;
 }
-.nav-link{
+
+.nav-link {
   font-size: 16px;
   line-height: 16px;
   color: #3A3A3A;
   font-weight: 400;
   padding: 8px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
-.navbar .navbar-brand{
+
+.navbar .nav-link::before {
+  display: block;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #EC963C;
+  content: "";
+  transition: transform .6s cubic-bezier(.28, .75, .22, .95);
+  transform: scaleX(0);
+  transform-origin: right center;
+  border-color: var(--white);
+}
+
+.nav-link:hover {
+  color: #EC963C;
+}
+
+.nav-link:hover::before {
+  transform: scale(1);
+  transform-origin: left center;
+}
+
+.navbar .navbar-brand {
   width: 85px;
   display: flex;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
   width: 100%;
   height: auto;
+}
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
 }
