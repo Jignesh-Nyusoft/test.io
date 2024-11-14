@@ -10,17 +10,17 @@ og_title: LogicStar
     <div class="team pb-1">
         <h2> Founding team </h2>
     </div>        
-    {% for team in site.teams limit: 4 %}
+    {% for teams in site.team limit: 4 %}
     <div class="col-12 col-md-6 mb-3">
         <div class="team team-summary">
-            {% if team.image %}
+            {% if teams.image %}
             <div class="team-image">
                 <img width="60" height="60" alt="{{ team.title }}" class="img-fluid mb-2" src="{{ team.image | relative_url }}" />
             </div>
             {% endif %}
             <div class="team-meta">
                 <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
-                <p class="team-description">{{ team.jobtitle }}</p>
+                <p class="team-description">{{ teams.jobtitle }}</p>
             </div>
         </div>
     </div>
