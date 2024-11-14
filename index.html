@@ -121,36 +121,7 @@ og_title: LogicStar
     <a id="btn-register-your-interest" class="btn btn-primary btn-styled" href="{{ site.baseurl }}/contact" role="button">Register your interest</a>
   </div>
 
-  <hr class="dots-separator">
 
-  <h2 class="title-sentence">
-    NetFabric combines <strong>Large Language Models (LLMs)</strong> with 
-    <strong>advanced mathematical models</strong> from a decade of research
-    to provide the context you need to truly understand your network
-</h2>
-
-  <p class="cards-group">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    {% for item in site.data.product.product_features %}
-    <div class="col">
-      <div class="card h-100 mb-3">
-        <div class="row g-0 align-items-center justify-content-center">
-          <div class="col-md-3 col-6">
-            <img src="{{ site.baseurl }}/assets/images/{{item.image}}" class="img-fluid rounded-start">
-          </div>
-          <div class="col-md-9">
-            <div class="card-body">
-              <div class="card-text">
-                {{ item.description }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  </p>
 
   <hr class="dots-separator">
 
