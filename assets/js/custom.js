@@ -51,4 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
+$(document).ready(function() {
+  const currentYear = new Date().getFullYear();
+  $('#year').text(currentYear);
+});
