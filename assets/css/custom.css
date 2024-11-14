@@ -83,6 +83,7 @@ html {
 .btn-styled:hover {
   background: #ffffff;
   color: #EC963C;
+  border: 1px solid #EC963C;
 }
 
 /* Apply the Montserrat font to the entire body */
@@ -398,6 +399,7 @@ align-items-center .no-link-style:hover,
   height: 32px;
   border-radius: 50%;
   background: #FFFFFF;
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 .footer .social-icon a i{
