@@ -90,38 +90,22 @@ html {
 /***********/
 
 .btn-styled {
-  background: linear-gradient(to right, rgb(45, 36, 146), #3366ffff);
-  border: none;
+  background: #EC963C;
+  border: 1px solid #EC963C;
   color: white;
   font-weight: bold;
-  font-size: 1.125rem;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-styled:hover {
-  background: linear-gradient(to right, rgb(45, 36, 146), rgb(109, 145, 255));
+  background: #ffffff;
+  color: #EC963C;
 }
-
-.btn {
-  border-radius: 20px !important;
-}
-
-/*********/
-/* FONTS */
-/*********/
-
-/* @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-} */
 
 /* Apply the Montserrat font to the entire body */
 body {
@@ -277,4 +261,23 @@ h3 {
 .no-link-style:focus {
   color: inherit; /* Ensure color does not change on hover or focus */
   text-decoration: none; /* Ensure no underline on hover or focus */
+}
+
+.navbar{
+  box-shadow: 4px 4px 40px 0px #0000000F;
+}
+.nav-link{
+  font-size: 16px;
+  line-height: 16px;
+  color: #3A3A3A;
+  font-weight: 400;
+  padding: 8px;
+}
+.navbar .navbar-brand{
+  width: 85px;
+  display: flex;
+}
+.navbar .navbar-brand img{
+  width: 100%;
+  height: auto;
 }
