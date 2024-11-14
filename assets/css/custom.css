@@ -96,9 +96,8 @@ html {
   background: #EC963C;
   border: 1px solid #EC963C;
   color: white;
-  font-weight: bold;
   border-radius: 8px;
-  padding: 15px 30px;
+  padding: 14px 29px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -287,6 +286,7 @@ align-items-center .no-link-style:hover,
 
 .navbar {
   box-shadow: 4px 4px 40px 0px #0000000F;
+  padding: 18px 0;
 }
 
 .nav-link {
@@ -334,4 +334,10 @@ align-items-center .no-link-style:hover,
 .container{
   max-width: 1200px;
   padding: 0 15px;
+}
+.navbar .navbar-nav{
+  gap: 8px;
+}
+.navbar .navbar-nav .btn-header-keep-me-updated{
+  margin-left: 16px;
 }
