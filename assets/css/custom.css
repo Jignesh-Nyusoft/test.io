@@ -361,7 +361,7 @@ align-items-center .no-link-style:hover,
   flex-wrap: wrap;
   padding-bottom: 24px;
   margin-bottom: 24px;
-  border: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 .footer .menu-list{
   display: flex;
@@ -376,8 +376,40 @@ align-items-center .no-link-style:hover,
   line-height: 24px;
   color: #FFFFFF;
   font-weight: 400;
+  padding: 0;
   transition: all 0.3s ease-in-out;
 }
 .footer .menu-list .nav-link:hover{
   color: #EC963C;
+}
+.footer .social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.footer .social-icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.footer .social-icon a i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: #14213D;
+}
+.footer .social-icon a:hover{
+  background: #EC963C;
+}
+.footer .social-icon a:hover i{
+  color: #FFFFFF;
 }
