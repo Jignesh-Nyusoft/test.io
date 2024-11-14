@@ -323,7 +323,7 @@ align-items-center .no-link-style:hover,
 }
 
 .navbar .navbar-brand {
-  width: 85px;
+  width: 91px;
   display: flex;
 }
 
@@ -338,6 +338,6 @@ align-items-center .no-link-style:hover,
 .navbar .navbar-nav{
   gap: 8px;
 }
-.navbar .navbar-nav .btn-header-keep-me-updated{
+.navbar .navbar-nav #btn-header-keep-me-updated{
   margin-left: 16px;
 }
