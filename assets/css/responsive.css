@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1200px) {
+    .footer .menu-wapper{
+        gap: 24px;
+    }
+    .footer .menu-list{
+        gap: 15px;
+    }
+    .footer .footer-logo{
+        max-width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 767px) {
+    .footer .menu-wapper{
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    .footer .menu-list{
+        flex-direction: column;
+    }
+    .footer .menu-wapper{
+        gap: 40px;
+    }
+}

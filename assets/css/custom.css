@@ -48,30 +48,6 @@ html {
   margin-top: 3rem;
 }
 
-/**********/
-/* FOOTER */
-/**********/
-
-.footer {
-  background: linear-gradient(to right, #090446ff, #3366ffff);
-  transition: background-color 0.5s ease;
-  /* Transition effect */
-}
-
-.footer a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.footer a:hover,
-.footer a:focus {
-  color: inherit;
-  /* Ensure color does not change on hover or focus */
-  text-decoration: none;
-  /* Ensure no underline on hover or focus */
-}
-
-
 /*************/
 /* ALIGNMENT */
 /*************/
@@ -349,7 +325,7 @@ align-items-center .no-link-style:hover,
   background: #14213D;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  padding: 80px 0;
+  padding: 80px 0 87px;
   position: relative;
 }
 .footer::after{
@@ -380,9 +356,13 @@ align-items-center .no-link-style:hover,
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  padding-bottom: 26px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #FFFFFF;
+}
+.footer .footer-logo{
+  max-width: 200px;
+  width: 100%;
 }
 .footer .menu-list{
   display: flex;
@@ -433,4 +413,28 @@ align-items-center .no-link-style:hover,
 }
 .footer .social-icon a:hover i{
   color: #FFFFFF;
+}
+.copy-right{
+  color: #FFFFFF;
+}
+.copy-right p{
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+.copy-right .page-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.copy-right .page-link a{
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
