@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>NetFabric | {{ page.title }}</title>
+    <title>LogicStar | {{ page.title }}</title>
 
     {% include google_analytics.html %}
 
@@ -15,157 +15,22 @@
     <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/icons/netfabric-favicon.ico" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/icons/netfabric-favicon.ico" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/icons/favicon.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/icons/favicon.ico" media="(prefers-color-scheme: dark)">
 
     <!-- Open Graph Meta Tags (social media sharing) -->
-    <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}NetFabric | {{ page.title }}{% endif %}" />
-    <meta property="og:description" content="{{ page.og_content | default: 'NetFabric is developing a next-gen network observability platform' }}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.og_image | default: '/assets/images/NetFabricLogo2.png' }}" />
+    <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}LogicStar AI | {{ page.title }}{% endif %}" />
+    <meta property="og:description" content="LogicStar AI System for Reproducing and Fixing Bugs in Commercial Applications." />
+    <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}NetFabric | {{ page.title }}{% endif %}" />
-    <meta name="twitter:card" content="{{ site.url }}{{ page.og_image | default: '/assets/images/NetFabricLogo2.png' }}" />
-    <meta name="twitter:description" content="{{ page.og_content | default: 'NetFabric is developing a next-gen network observability platform' }}" />
-    <meta name="twitter:image" content="{{ site.url }}{{ page.og_image | default: '/assets/images/NetFabricLogo2.png' }}" />
+    <meta name="twitter:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}LogicStar AI | {{ page.title }}{% endif %}" />
+    <meta name="twitter:card" content="{{ site.url }}{{ page.og_image }}" />
+    <meta name="twitter:description" content="LogicStar AI System for Reproducing and Fixing Bugs in Commercial Applications." />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.og_image}}" />
     
-    <!-- Snack Bar
-    <style>
-      /* Style for the snackbar banner */
-      #snackbar {
-        background-color: #ededed; /* Neon blue color */
-        color: #000000;
-        text-align: center;
-        padding: 3px;
-        position: fixed; /* Stay at the bottom */
-        left: 0; /* Align to the left */        
-        right: 0; /* Align to the left */
-        top: 90px; /* Stick to the top */
-        width: 100%; /* Full width */
-        font-size: 16px;
-        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
-        z-index: 1000;
-      }
-  
-      /* Snackbar link styling */
-      #snackbar a {
-        color: #3366ff; /* White color for the link */
-        font-weight: bold; /* Make link bold */
-        text-decoration: underline; /* Underline the link */
-        cursor: pointer; /* Change cursor to pointer on hover */
-      }
-    </style>-->
 
-    <!-- Inline CSS -->
-   <style>
-
-    .mvp-focus {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;  /* Centers the image and text vertically */
-      justify-content: space-between;
-      padding-right: 7%;
-      padding-left: 7%;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      background-color: #ffffff;
-      /*background-color: #f9f9f9*/;
-    }
-
-    .mvp-image {
-      max-width: 300px;
-      width: 80%;
-    }
-
-    .mvp-text {
-      flex: 1;
-    }
-
-    .mvp-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;  /* This centers the items vertically */
-      gap: 50px;
-    }
-
-    .mvp-text h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .mvp-text ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .mvp-text li {
-      margin-bottom: 10px;
-    }
-
-    .mvp-text strong {
-      color: #333;
-      font-weight: bold;
-    }
-
-    @media (max-width: 100px) {
-      .mvp-content {
-        flex-direction: column;
-        align-items: flex-start; 
-      }
-
-      .mvp-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-      }
-    }
-
-
-    /* New Section Styles */
-    .image-text-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      text-align: center;
-    }
-
-    .image-text-wrapper img {
-      max-width: 100%; /* Thumbnail size */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 8px;
-    }
-
-    .image-text-wrapper p {
-      max-width: 100%;
-      line-height: 1.6;
-    }
-
-    .contact-action {
-      margin-top: 10px;
-    }
-
-    @media (min-width: 768px) {
-      .image-text-wrapper {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .image-text-wrapper img {
-        max-width: 100%; /* Thumbnail size */
-        margin-right: 20px; /* Space between image and text */
-      }
-      
-      .image-text-wrapper p {
-        max-width: 100%; /* Allow the text to use available space */
-      }
-
-      .contact-action {
-        margin-top: 0; /* Remove top margin */
-      }
-    }
-  </style>
 
 </head>
 

@@ -20,11 +20,11 @@ social_icon:
     url: #,
     name: Instagram  
   - icon_class: icon-icon-7
-    url: #,
+    url: https://x.com/logic_star_ai,
     name: Twitter  
   - icon_class: icon-icon-8
-    url: #,
+    url: https://www.linkedin.com/company/logicstar-ai,
     name: linkedin 
   - icon_class: icon-icon-9
-    url: #,
+    url: https://github.com/logic-star-ai,
     name: Github         
