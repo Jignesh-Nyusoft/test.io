@@ -10,8 +10,7 @@ og_title: LogicStar
     <div class="team pb-1">
         <h2> Founding team </h2>
     </div>        
-    <!-- {% assign teams = site.team | sort: "weight" %} -->
-    {% for team in teams limit: 4 %}
+    {% for team in site.teams limit: 4 %}
     <div class="col-12 col-md-6 mb-3">
         <div class="team team-summary">
             {% if team.image %}
