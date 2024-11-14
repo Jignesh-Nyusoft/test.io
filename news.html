@@ -41,7 +41,7 @@ title: News
 </style>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-  {% for post in site.team %}
+  {% for post in site.posts %}
     <div class="col">
       <div class="card h-100">
         <a href="{{ post.url }}" class="d-flex flex-column h-100">
@@ -58,5 +58,5 @@ title: News
         </a>
       </div>
     </div>
-    {% endif %}
+  {% endfor %}
 </div>
