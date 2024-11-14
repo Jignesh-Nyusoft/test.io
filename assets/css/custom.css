@@ -76,6 +76,7 @@ html {
   padding: 14px 29px;
   font-size: 16px;
   line-height: 18px;
+  text-decoration: none;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
