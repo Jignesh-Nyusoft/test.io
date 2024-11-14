@@ -4,27 +4,32 @@ title: Our Company
 og_title: LogicStar
 ---
 <div class="page-title">
-    <h1>{{page.title}}</h1>
+    <div class="container">
+        <h1>{{page.title}}</h1>
+    </div>
 </div>
-<div class="row pt-6 pb-6">
-    <div class="team pb-1">
-        <h2> Founding team </h2>
-    </div>        
-    {% for post in site.team %}
-    <div class="col-12 col-md-6 mb-3">
-        <div class="team team-summary">
-            <div class="team-image">
-                <img width="60" height="60" alt="{{ post.title }}" class="img-fluid mb-2" src="{{ post.image | relative_url }}" />
-            </div>
-            
-            <div class="team-meta">
-                <h2 class="team-name"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                <p class="team-description">{{ team.jobtitle }}</p>
+<div class="row">
+    <div class="container">
+        <div class="team pb-1">
+            <h2> Founding team </h2>
+        </div>
+        {% if site.data.features %}
+        <div class="col-12 col-md-6 mb-3">
+            <div class="team team-summary">
+                <div class="team-image">
+                    <img width="60" height="60" alt="{{ post.title }}" class="img-fluid mb-2"
+                        src="{{ post.image | relative_url }}" />
+                </div>
+
+                <div class="team-meta">
+                    <h2 class="team-name"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                    <p class="team-description">{{ team.jobtitle }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    {% endfor %}
-    <div class="team">
-        <a href="/team" class="button mb-3">Meet the whole team</a>
+        {% endfor %}
+        <div class="team">
+            <a href="/team" class="button mb-3">Meet the whole team</a>
+        </div>
     </div>
 </div>
