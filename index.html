@@ -18,22 +18,68 @@ og_title: LogicStar
           <a href="" class="btn-styled">Learn More</a>
         </div>
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-5">
         <div class="image-box">
           <img src="{{ site.baseurl }}/assets/images/website/hero-main.png" alt="banner image">
+          <div class="banner_textes">
+            <h3 class="list first_text">Autonomous Bug Resolution</h3>
+            <h3 class="list second_text">Improved Code Quality</h3>
+            <h3 class="list third_text">Empowering Your Engineering Team</h3>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- transform section -->
+
+<div class="transforming_section">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-5">
+              <div class="trasform_img">
+                  <img src="{{ site.baseurl }}/assets/images/website/trasform-img.svg" alt="">
+              </div>
+          </div>
+          <div class="col-lg-7">
+              <div class="content_section">
+                  <h2 class="main-title">
+                      Transforming Software Development with AI
+                  </h2>
+                  <p>
+                      At LogicStar, we are dedicated to revolutionizing software development through the power of artificial intelligence. Our mission is to empower engineering teams by providing an innovative AI agent that autonomously resolves bugs, allowing developers to focus on creativity and innovation.<br>
+                      Founded by a team of engineers and AI experts, LogicStar emerged from the need to enhance productivity and improve code quality in an increasingly complex software landscape. Our solution seamlessly integrates into existing workflows, continuously monitoring code for issues and implementing fixes in real time
+                  </p>
+                  <ul class="check_list">
+                      <li> <i class="icon icon-icon-1"></i> Accelerated Development Cycles</li>
+                      <li><i class="icon icon-icon-1"></i>  Enhanced Code Quality</li>
+                      <li><i class="icon icon-icon-1"></i>  Increased Team Productivity</li>
+                      <li><i class="icon icon-icon-1"></i>  Reduced Technical Debt</li>
+                  </ul>
+                  <a href="#" class="btn btn-styled">
+                      Read More
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
 {% if site.data.features %}
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">
-
+      <h2 class="main-title">
+        Empowering Innovation in Software Development
+    </h2>
+    <p class="sub_title">
+        LogicStar harnesses AI to empower engineering teams with an agent that autonomously resolves bugs, enabling faster cycles and improved code quality. Founded by experts, we are dedicated to advancing the future of software.
+    </p>
       {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="col-12 col-md-6 col-lg-6">
         <div class="feature">
           {% if feature.image %}
           <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
@@ -48,5 +94,131 @@ og_title: LogicStar
   </div>
 </div>
 {% endif %}
-  
+
+
+
+<!-- owl slider section -->
+
+<div class="slider_section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <h2 class="main-title">
+                  Driven by Results, Recognized by Clients.
+              </h2>
+          </div>
+          <div class="col-lg-8">
+              
+                  <div id="owl-carousel" class="client-slider owl-carousel owl-theme">
+                    <div class="item">
+                      <div class="client_box">
+                          <div class="slide_content">
+                              <i class="icon icon-icon-4"></i>
+                              <p class="slider_para">“Working with this team has been an absolute game-changer for our business. Their expertise and commitment to delivering results have helped us improve our processes and reach new heights. Highly recommend!”</p>
+                              <div class="author">
+                               <div class="author_img">
+                                   <img src="{{ site.baseurl }}/assets/images/website/sarah.png" alt="">
+                               </div>
+                               <p class="name">Sarah T.</p>
+                          </div>
+                         </div>
+                         <div class="company_logo">
+                          <img src="{{ site.baseurl }}/assets/images/website//clientlogo-1.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="client_box">
+                          <div class="slide_content">
+                              <i class="icon icon-icon-4"></i>
+                              <p class="slider_para">"We’ve partnered with many service providers, but none have shown the same level of dedication and attention to detail as this team. They truly understand our needs and consistently deliver beyond expectations."</p>
+                              <div class="author">
+                               <div class="author_img">
+                                   <img src="{{ site.baseurl }}/assets/images/website/john.png" alt="">
+                               </div>
+                               <p class="name">John M.</p>
+                          </div>
+                         </div>
+                         <div class="company_logo">
+                          <img src="{{ site.baseurl }}/assets/images/website/nvidia.png" alt="">
+                      </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="client_box">
+                          <div class="slide_content">
+                              <i class="icon icon-icon-4"></i>
+                              <p class="slider_para">"From the initial consultation to project completion, the experience has been seamless. The team's ability to understand our goals and execute flawlessly has made them a vital partner for our company."</p>
+                              <div class="author">
+                               <div class="author_img">
+                                   <img src="{{ site.baseurl }}/assets/images/website/emily.png" alt="">
+                               </div>
+                               <p class="name">Emily R.</p>
+                              </div>
+                          </div>
+                          <div class="company_logo">
+                              <img src="{{ site.baseurl }}/assets/images/website/tesla.png" alt="">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- owl slider end -->
+
+
+<!-- logo slider start -->
+
+
+<div class="logo_slider_section">
+  <div class="">
+      <h2 class="main-title text-center">
+          Trusted by Leading Companies
+      </h2>
+      <div id="owl-carousel" class="logo-slider owl-carousel owl-theme">
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/skype.png" alt="">
+          </div>
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/google.png" alt="">
+          </div>
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/nvidia.png" alt="">
+          </div>
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/tesla.png" alt="">
+          </div>
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/microsoft.png" alt="">
+          </div>
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/apple.png" alt="">
+          </div>
+          <div class="item">
+              <img src="{{ site.baseurl }}/assets/images/website/Logo/amazon.png" alt="">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- -----news section start----- -->
+
+<div class="blog_section">
+  <div class="container">
+      <h2 class="main-title text-center">
+          Explore All Our Latest News!
+      </h2>
+      
+  </div>
+</  
+
+
 </div>
