@@ -51,7 +51,23 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+
+
 $(document).ready(function() {
+
   const currentYear = new Date().getFullYear();
   $('#year').text(currentYear);
+
+  // ------------------ Menu Link Active Class ------------------ //
+  const currentUrl = window.location.pathname;
+
+  $(".navbar-nav .nav-link").each(function () {
+    const linkUrl = $(this).attr("href");
+    
+    if (currentUrl === linkUrl || (currentUrl.startsWith(linkUrl) && linkUrl !== "/")) {
+      $(this).addClass("active");
+    }
+  });
+
 });

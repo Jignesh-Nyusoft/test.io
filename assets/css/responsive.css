@@ -26,4 +26,21 @@
     .footer .menu-wapper{
         gap: 40px;
     }
+    .footer::before,
+    .footer::after{
+        display: none;
+    }
+    .footer{
+        padding: 50px 0;
+    }
+    .copy-right{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .copy-right p{
+        margin: 0;
+    }
+    .copy-right .page-link{
+        gap: 15px;
+    }
 }

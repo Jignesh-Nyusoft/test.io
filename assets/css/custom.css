@@ -439,5 +439,9 @@ align-items-center .no-link-style:hover,
   color: #FFFFFF;
   font-weight: 400;
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.copy-right .page-link a:hover{
+  color: #EC963C;
 }
