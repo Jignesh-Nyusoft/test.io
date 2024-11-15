@@ -59,13 +59,4 @@ $(document).ready(function() {
   const currentYear = new Date().getFullYear();
   $('#year').text(currentYear);
 
-  // ------------------ Menu Link Active Class ------------------------//
-  const currentUrl = window.location.pathname;
-
-  $(".navbar-nav .nav-link").each(function () {
-    if (window.location.pathname === '{{ site.baseurl }}/' || window.location.pathname === '{{ site.baseurl }}') {
-      $('#home-link').addClass('active');
-    }
-  });
-
 });

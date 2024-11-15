@@ -291,11 +291,16 @@ align-items-center .no-link-style:hover,
   border-color: var(--white);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: #EC963C;
 }
+.nav-link.active{
+  font-weight: 700;
+}
 
-.nav-link:hover::before {
+.nav-link:hover::before,
+.nav-link.active::before {
   transform: scale(1);
   transform-origin: left center;
 }
