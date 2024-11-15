@@ -62,11 +62,14 @@ $(document).ready(function() {
   // ------------------ Menu Link Active Class ------------------ //
   const currentUrl = window.location.pathname;
 
+  $(".navbar-nav .nav-link").removeClass("active");
+
   $(".navbar-nav .nav-link").each(function () {
     const linkUrl = $(this).attr("href");
-    
+
     if (currentUrl === linkUrl || (currentUrl.startsWith(linkUrl) && linkUrl !== "/")) {
       $(this).addClass("active");
+      return false;
     }
   });
 
