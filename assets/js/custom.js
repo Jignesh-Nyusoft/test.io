@@ -59,16 +59,12 @@ $(document).ready(function() {
   const currentYear = new Date().getFullYear();
   $('#year').text(currentYear);
 
-  // ------------------ Menu Link Active Class ------------------ //
+  // ------------------ Menu Link Active Class ------------------------//
   const currentUrl = window.location.pathname;
 
   $(".navbar-nav .nav-link").each(function () {
-    const linkUrl = $(this).attr("href");
-
-    if (currentUrl === linkUrl || (currentUrl.startsWith(linkUrl) && linkUrl !== "/")) {
-      $(".navbar-nav .nav-link").removeClass("active");
-      $(this).addClass("active");
-      return false; 
+    if (window.location.pathname === '{{ site.baseurl }}/' || window.location.pathname === '{{ site.baseurl }}') {
+      $('#home-link').addClass('active');
     }
   });
 
