@@ -450,3 +450,9 @@ align-items-center .no-link-style:hover,
 .copy-right .page-link a:hover{
   color: #EC963C;
 }
+
+/* home page css start */
+.hero-banner{
+  background: trasparent url(../images/home-bg.svg) no-repeat right bottom;
+
+}
