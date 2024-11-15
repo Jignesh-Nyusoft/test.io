@@ -3,7 +3,7 @@
     "title": "Validate and Confirm True Positive Bugs from Your Backlog",
     "description": "Efficiently identify and confirm reproducible bugs (True Positives) from your backlog using advanced bug-finding tools.",
     "image": {
-      "url": "images/website/features/validate.png",
+      "url": "assets/images/website/features/validate.png",
       "width": 128,
       "height": 128
     }
@@ -12,7 +12,7 @@
     "title": "Autonomously Fix Verified Bugs with Multiple LLM Suggestions",
     "description": "Leverage multiple LLM suggestions to autonomously validate and fix verified bugs, enhancing accuracy and efficiency.",
     "image": {
-      "url": "images/website/features/tools.png",
+      "url": "assets/images/website/features/tools.png",
       "width": 128,
       "height": 128
     }
@@ -21,7 +21,7 @@
     "title": "Efficiently Manage Your Backlog and Clear Verifiable Bugs",
     "description": "Eliminate verifiable bugs from your backlog with higher accuracy and without wasting valuable engineer time.",
     "image": {
-      "url": "images/website/features/belt.png",
+      "url": "assets/images/website/features/belt.png",
       "width": 128,
       "height": 128
     }
@@ -30,7 +30,7 @@
     "title": "Expand Your Development Team with Cutting-Edge Technology",
     "description": "Boost your squad's delivery rate with LogicStar's autonomous silicon developer, working seamlessly alongside your human engineers.",
     "image": {
-      "url": "images/website/features/tech.png",
+      "url": "assets/images/website/features/tech.png",
       "width": 128,
       "height": 128
     }
