@@ -792,6 +792,10 @@ text-transform: capitalize;
   bottom: -6px;
 }
 
+.client-slider .item{
+  float: left;
+}
+
 /* logo slider css */
 
 

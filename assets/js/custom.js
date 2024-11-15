@@ -59,50 +59,54 @@ $(document).ready(function() {
   const currentYear = new Date().getFullYear();
   $('#year').text(currentYear);
 
+
+
+  $('.client-slider').owlCarousel({
+    loop: true,
+    margin: 30,
+    dots: false,
+    nav: true,
+    items: 2,
+    navText: ["<i class='icon icon-icon-3 '></i>","<i class='icon icon-icon-2 '></i>"],
+    responsive : {
+        // breakpoint from 0 up
+        0 : {
+            items: 1,
+        },
+        // breakpoint from 480 up
+        480 : {
+            items: 1,
+        },
+        // breakpoint from 768 up
+        768 : {
+            items: 2,
+        }
+    }
+  })
+  
+  
+  $('.logo-slider').owlCarousel({
+    loop: true,
+    margin: 30,
+    dots: false,
+    nav: false,
+    responsive : {
+        // breakpoint from 0 up
+        0 : {
+            items: 1,
+        },
+        // breakpoint from 480 up
+        480 : {
+            items: 2,
+        },
+        // breakpoint from 768 up
+        768 : {
+            items: 7,
+        }
+    }
+  })
+
+
+
 });
 
-
-Jquery('.client-slider').owlCarousel({
-  loop: true,
-  margin: 30,
-  dots: false,
-  nav: true,
-  items: 2,
-  navText: ["<i class='icon icon-icon-3 '></i>","<i class='icon icon-icon-2 '></i>"],
-  responsive : {
-      // breakpoint from 0 up
-      0 : {
-          items: 1,
-      },
-      // breakpoint from 480 up
-      480 : {
-          items: 1,
-      },
-      // breakpoint from 768 up
-      768 : {
-          items: 2,
-      }
-  }
-})
-
-
-Jquery('.logo-slider').owlCarousel({
-  loop: true,
-  margin: 30,
-  dots: false,
-  nav: false,
-  responsive : {
-      // breakpoint from 0 up
-      0 : {
-          items: 1,
-      },
-      // breakpoint from 480 up
-      480 : {
-          items: 2,
-      },
-      // breakpoint from 768 up
-      768 : {
-          items: 7,
-      }
-  }
-})
