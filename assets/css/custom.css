@@ -789,7 +789,9 @@ text-transform: capitalize;
 .slider_section .owl-nav {
   position: absolute;
   left: -48%;
+  display: flex;
   bottom: -6px;
+  gap: 15px;
 }
 
 .client-slider .item{
