@@ -155,11 +155,11 @@ og_title: LogicStar
           Trusted by Leading Companies
       </h2>
       <div id="owl-carousel" class="logo-slider owl-carousel owl-theme">
-        {% for logos in site.data.companylogo %}
+        {% for companylogo in site.data.companylogo %}
           <div class="item">
               <img src="{{ companylogo.image.url  | relative_url  }}" alt="{{ companylogo.name }}">
           </div>
-        {% endif %}
+          {% endif %}
       </div>
   </div>
 </div>
