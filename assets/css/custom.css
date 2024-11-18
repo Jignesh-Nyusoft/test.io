@@ -926,6 +926,10 @@ color: rgba(67, 77, 100, 1);
   row-gap: 30px;
 }
 
+.home.news_listing_sec{
+  margin-bottom: 80px;
+}
+
 .square-container {
   position: relative;
   padding: 33.5%;
@@ -954,6 +958,7 @@ color: rgba(67, 77, 100, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-height: 56px;
 }
 .card-text {
   font-family: 'Ubuntu';
@@ -963,7 +968,7 @@ color: rgba(67, 77, 100, 1);
   text-align: left;
   color:  rgba(20, 33, 61, 1);
   text-decoration: none;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1254,7 +1259,10 @@ color: rgba(0, 0, 0, 1);
 .news_listing_sec .row {
   margin: 15px -15px;
   row-gap: 30px;
+
 }
+
+
 .softwaredev_section {
   margin-top: 0;
   padding: 35px;

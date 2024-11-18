@@ -59,41 +59,39 @@ title: News
   <div class="row">
     {% for post in site.posts %}
     <div class="col-lg-4 col-md-6 col-12">
-      <div class="card">
-        <a href="{{ post.url }}" class="card_box">
-          <div class="square-container">
-            <img
-              src="{{ post.image }}"
-              class="card-img-top"
-              alt="{{ post.title }}"
-            />
-          </div>
-          <div class="card-body">
-            <div class="card_main_con"></div>
-              <h3 class="card-title">{{ post.title }}</h3>
-              <p class="card-text">{{ post.short }}</p>
-            </div>
-            <div class="card-date">
-              <small class="text-muted"
-                >{{ post.date | date: "%B %d, %Y" }}</small
-              >
-              <button>Read More <i class="icon icon-icon-2"></i> </button>
-            </div>
-
-          </div>
-          
-        </a>
+        <div class="card">
+          <a href="{{ post.url }}" class="card_box">
+              <div class="square-container">
+                <img
+                  src="{{ post.image }}"
+                  class="card-img-top"
+                  alt="{{ post.title }}"
+                />
+              </div>
+              <div class="card-body">
+                  <div class="card_main_con">
+                    <h3 class="card-title">{{ post.title }}</h3>
+                    <p class="card-text">{{ post.short }}</p>
+                  </div>
+                  <div class="card-date">
+                    <small class="text-muted"
+                      >{{ post.date | date: "%B %d, %Y" }}</small
+                    >
+                    <button>Read More <i class="icon icon-icon-2"></i> </button>
+                  </div>
+              </div>
+          </a>
+        </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </div>
 
 <!-- ================ latest banner design end ================== -->
 
 
 
-<div class="news_listing_sec">
+<div class="home news_listing_sec">
   <div class="container">
     <h2 class="main-title text-center">Explore More Insights</h2>
 
@@ -110,19 +108,17 @@ title: News
               />
             </div>
             <div class="card-body">
-              <div class="card_main_con"></div>
-                <h3 class="card-title">{{ post.title }}</h3>
-                <p class="card-text">{{ post.short }}</p>
+              <div class="card_main_con">
+                  <h3 class="card-title">{{ post.title }}</h3>
+                  <p class="card-text">{{ post.short }}</p>
               </div>
-              <div class="card-date">
-                <small class="text-muted"
-                  >{{ post.date | date: "%B %d, %Y" }}</small
-                >
-                <button>Read More <i class="icon icon-icon-2"></i> </button>
-              </div>
-
             </div>
-            
+            <div class="card-date">
+              <small class="text-muted"
+                >{{ post.date | date: "%B %d, %Y" }}</small
+              >
+              <button>Read More <i class="icon icon-icon-2"></i> </button>
+            </div>
           </a>
         </div>
       </div>

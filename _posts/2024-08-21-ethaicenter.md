@@ -2,8 +2,8 @@
 title: ETH AI Center Affiliation
 short: We're an official affiliate of the ETH Zurich AI Center, continuing our journey in building a network intelligence engine powered by AI/ML.
 date: 2024-10-23
-image: /assets/images/webisite/postimges/post-img-2.jpeg
-og_image: /assets/images/webisite/postimges/post-img-2.jpeg
+image: {{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg
+og_image: {{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg
 layout: post
 ---
 
