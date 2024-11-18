@@ -181,19 +181,28 @@ og_title: LogicStar
               <div class="card">
                 <a href="{{ post.url }}" class="card_box">
                   <div class="square-container">
-                    <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}" />
+                    <img
+                      src="{{ post.image }}"
+                      class="card-img-top"
+                      alt="{{ post.title }}"
+                    />
                   </div>
                   <div class="card-body">
-                    <h3 class="card-title">{{ post.title }}</h3>
-                    <p class="card-text">{{ post.short }}</p>
+                    <div class="card_main_con">
+                        <h3 class="card-title">{{ post.title }}</h3>
+                        <p class="card-text">{{ post.short }}</p>
+                    </div>
                     <div class="card-date">
-                      <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
-                      <button>Read More <i class="icon icon-icon-2"></i></button>
+                      <small class="text-muted"
+                        >{{ post.date | date: "%B %d, %Y" }}</small
+                      >
+                      <button>Read More <i class="icon icon-icon-2"></i> </button>
                     </div>
                   </div>
+                  
                 </a>
               </div>
-            </div>
+            </div
             {% endfor %}
           </div>
       
