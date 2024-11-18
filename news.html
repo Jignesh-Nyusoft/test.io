@@ -97,7 +97,7 @@ title: News
     <h2 class="main-title text-center">Explore More Insights</h2>
 
     <div class="row">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:1 %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <a href="{{ post.image.url | relative_url }}" class="card_box">
@@ -130,7 +130,7 @@ title: News
   </div>
 
 
-  <div class="pagination">
+  <!-- <div class="pagination">
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="prev disable"> << Previous</a>
     {% endif %}
@@ -139,17 +139,12 @@ title: News
     <a href="{{ paginator.paginate_path | replace: ':num', page }}" 
        class="page-number {% if page == paginator.page %}active{% endif %}">{{ page }}</a>
 
-       <!-- <a href="#" 
-       class="page-number active">01</a>
-       <a href="#" 
-       class="page-number">02</a> -->
-
 
     {% endfor %}
     
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next >> </a>
-    {% endif %}
+    {% endif %} -->
 </div>  
 
 
