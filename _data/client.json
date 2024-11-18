@@ -1,0 +1,36 @@
+[
+    {
+    
+      "description": "Working with this team has been an absolute game-changer for our business. Their expertise and commitment to delivering results have helped us improve our processes and reach new heights. Highly recommend!",
+      "image": {
+        "url": "/assets/images/website/sarah.png"
+      },
+      "name" : "Sarah T.",
+      "companylogo":{
+        "url" : "/assets/images/website//clientlogo-1.png"
+      }
+    },
+    {
+     
+      "description": "We’ve partnered with many service providers, but none have shown the same level of dedication and attention to detail as this team. They truly understand our needs and consistently deliver beyond expectations.",
+      "image": {
+        "url": "}/assets/images/website/john.png"
+      },
+      "name" : "John M.",
+      "companylogo":{
+        "url" : "/assets/images/website/nvidia.png"
+      }
+    },
+    {
+     
+      "description": "From the initial consultation to project completion, the experience has been seamless. The team's ability to understand our goals and execute flawlessly has made them a vital partner for our company.",
+      "image": {
+        "url": "/assets/images/website/emily.png"
+      },
+      "name" : "Emily R.",
+      "companylogo":{
+        "url" : "/assets/images/website/tesla.png"
+      }
+    }
+  ]
+  

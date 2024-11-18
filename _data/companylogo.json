@@ -1,0 +1,46 @@
+[
+    {
+      "image": {
+        "url": "/assets/images/website/Logo/skype.png"
+      },
+      "name" : "Skype"
+    },
+    {
+        "image": {
+            "url": "/assets/images/website/Logo/google.png"
+        },
+        "name" : "Google"
+    },
+    {
+        "image": {
+            "url": "/assets/images/website/Logo/nvidia.png"
+        },
+        "name" : "Nvindia"
+    },
+    {
+        "image": {
+            "url": "/assets/images/website/Logo/tesla.png"
+        },
+        "name" : "Tesla"
+    },
+    {
+        "image": {
+            "url": "/assets/images/website/Logo/microsoft.png"
+        },
+        "name" : "Microsoft"
+    },
+    {
+        "image": {
+            "url": "/assets/images/website/Logo/apple.png"
+        },
+        "name" : "Apple"
+    },
+    {
+        "image": {
+            "url": "/assets/images/website/Logo/amazon.png"
+        },
+        "name" : "Amazon"
+    }
+    
+  ]
+  
