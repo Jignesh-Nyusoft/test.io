@@ -10,7 +10,7 @@ collections:
     output: true
 
 # Permalink structure for _posts
-permalink: /news/:name/
+permalink: /news/:title/
 
 baseurl: ""
 
