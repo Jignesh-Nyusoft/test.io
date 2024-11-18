@@ -120,8 +120,8 @@ h1 {
 
 h2 {
   font-weight: bold;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
+  /* margin-top: 1.5rem;
+  margin-bottom: 0.8rem; */
 }
 
 h2 strong {
@@ -453,7 +453,7 @@ align-items-center .no-link-style:hover,
 
 /* home page css start */
 .hero-banner{
-  background: url(../images/home-bg.svg) no-repeat right bottom;
+  background: url(../images/website/home-bg.svg) no-repeat right bottom;
   padding-bottom: 76px;
 
 }
@@ -491,7 +491,7 @@ align-items-center .no-link-style:hover,
   content: '';
   width: 100%;
   height: 698px;
-  background: url(/images/banner-left.svg) no-repeat top left;
+  background: url(../images/website/banner-left.svg) no-repeat top left;
   position: absolute;
   left: -22%;
   top: -220px;
@@ -739,6 +739,7 @@ text-transform: capitalize;
 .slider_section .owl-carousel .owl-item img{
   max-width: 200px;
   margin: 0 auto;
+  max-height: 60px; 
 }
 /* .slider_section .owl-carousel .owl-item {
   width: 370px !important;
@@ -833,6 +834,286 @@ text-transform: capitalize;
 }
 
 
+.slide_content p.slider_para {
+  min-height: 157px;
+}
+
+/*======== news banner section design ========*/
+
+.banner_section {
+  background: url(../images/website/common-banner-bg.svg) center center no-repeat;
+  padding: 65px 0 57px;
+  background-size: cover;
+}
+.banner_title{
+  font-family: 'Ubuntu';
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 55.15px;
+  text-align: center;
+}
+
+.latest_banner{
+  box-shadow: 10px 10px 40px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 253, 241, 1);
+  max-width:1170px;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 60px auto 80px;
+}
+.latestpost_title {
+  font-family: 'Ubuntu';
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.latest_banner a.card_box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 14px;
+}
+.latest_banner  .col-lg-4.col-md-6.col-12{
+  width: 100%;
+}
+
+.latest_banner .card-title{
+  font-family: 'Ubuntu';
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+text-align: left;
+
+}
+
+
+.latest_banner .card-text{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: rgba(67, 77, 100, 1);
+
+}
+
+.latest_banner .card-date button{
+  font-size: 20px;
+}
+.latest_banner .card-date button .icon:before{
+  font-size: 12px;
+}
+
+.latest_banner .card-date button .icon{
+  width: 28px;
+  height: 28px;
+}
+.latest_banner .square-container {
+  padding: 16.75% 26.2%;
+}
+.latest_banner .card {
+  border: 0;
+  background: none;
+}
+
+/* listing section design */
+
+.news_listing_sec .row {
+  margin: 40px -15px;
+  row-gap: 30px;
+}
+
+.square-container {
+  position: relative;
+  padding: 33.5%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.square-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-title {
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(20, 33, 61, 1);
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text {
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color:  rgba(20, 33, 61, 1);
+  text-decoration: none;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_box{
+  text-decoration: none;
+}
+
+.card-date small {
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(67, 77, 100, 1);
+}
+.card-date button {
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  background: none;
+  color: rgba(236, 150, 60, 1);
+}
+
+.card-date button .icon{
+  background-color: rgba(236, 150, 60, 1);
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.card-date button .icon::before{
+  font-size: 10px;
+}
+
+.card-date {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news_listing_sec .row .col-lg-4 {
+  padding: 0 15px;
+}
+
+
+.news_listing_sec .card {
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 8px;
+  background: #ffffff;
+  border: navajowhite;
+  box-shadow: 10px 10px 40px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 24px 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.pagination a.active {
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20.68px;
+  color: #ffffff;
+  background: rgba(236, 150, 60, 1);
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.pagination a:hover{
+  background-color: rgb(205 107 5);
+  color: #ffffff;
+} 
+
+.pagination a.prev,
+.pagination a.next  {
+  width: max-content;
+  background: none;
+  color: rgba(20, 33, 61, 1);
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.68px;
+  text-align: left;
+  /* text-underline-position: from-font; */
+  /* text-decoration-skip-ink: none; */
+}
+.pagination a{
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: rgba(20, 33, 61, 1);
+  text-decoration: none;
+}
+
+.pagination a.prev.disable,
+.pagination a.next.disable{
+  color:  rgba(147, 153, 166, 1);
+  
+}
+
+/* software development common section */
+
+.softwaredev_section{
+  background: url(../images/website/software-dev-bg.svg) center center no-repeat;
+  padding: 66px 14%;
+  max-width: 1170px;
+  border-radius: 8px;
+  margin: 80px 0;
+  text-align: center;
+  overflow: hidden;
+  background-size: cover;
+}
+.software_para{
+  font-family: 'Ubuntu';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: rgba(0, 0, 0, 1);
+
+}
+.softwaredev_section .main-title{
+  text-align: center;
+}
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;
@@ -846,6 +1127,10 @@ text-transform: capitalize;
   .list.third_text {
       right: 0;
   }
+  .latest_banner{
+    max-width: 1200px;
+    margin: 60px 15px 80px;
+  }
 }
 
 
@@ -857,7 +1142,7 @@ text-transform: capitalize;
       order: 2;
   }
   .hero-banner {
-      background: url(../images/home-bg.svg) no-repeat top center;
+      background: url(../images/website/home-bg.svg) no-repeat top center;
       padding-bottom: 76px;
   }
   .image-box {
@@ -884,8 +1169,39 @@ text-transform: capitalize;
   .title-image img {
       max-width: 100%;
   }
+  /* header menu design */
+
+/* .collapse.navbar-collapse {
+  position: absolute;
+  top: 100px;
+  display: block !important;
+  right: -100%;
+}
+.navbar-collapse.collapse.show {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 11;  
+  top: 90px;
+  right: 0;
+} */
+
 }
 
+@media only screen and (max-width:880px){
+  .latestpost_title {
+    margin-bottom: 20px;
+}
+  .latest_banner{
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+  .latest_banner .card-title {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .hero-content .title-image{
@@ -921,6 +1237,32 @@ text-transform: capitalize;
   .logo_slider_section{
       padding: 0 0 30px;
   }
+  .latest_banner a.card_box{
+   display: block;
+  }
+  .latest_banner .square-container {
+    padding: 33.5%;
+}
+.latestpost_title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.latest_banner .card-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+.news_listing_sec .row {
+  margin: 15px -15px;
+  row-gap: 30px;
+}
+.softwaredev_section {
+  margin-top: 0;
+  padding: 35px;
+}
+.softwaredev_section .main-title { 
+  font-size: 27px;
+  line-height: 40px;
+}
 }
   
 @media only screen and (max-width: 550px) {

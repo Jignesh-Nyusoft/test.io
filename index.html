@@ -109,7 +109,7 @@ og_title: LogicStar
               </h2>
           </div>
           <div class="col-lg-8">
-                  <div id="owl-carousel" class="client-slider owl-carousel owl-theme">=
+                  <div id="owl-carousel" class="client-slider owl-carousel owl-theme">
                     {% for client in site.data.client %}
                     <div class="item">
                       <div class="client_box">
@@ -167,14 +167,40 @@ og_title: LogicStar
 
 <!-- -----news section start----- -->
 
-<div class="blog_section">
-  <div class="container">
-      <h2 class="main-title text-center">
-          Explore All Our Latest News!
-      </h2>
-      
-  </div>
-</div>
 
+    
+      <div class="news_listing_sec">
+        <div class="container">
+          <h2 class="main-title text-center">
+            Explore All Our Latest News!
+        </h2>
+  
+          <div class="row">
+            {% for post in site.posts limit:3 %}
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="card">
+                <a href="{{ post.url }}" class="card_box">
+                  <div class="square-container">
+                    <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">{{ post.title }}</h3>
+                    <p class="card-text">{{ post.short }}</p>
+                    <div class="card-date">
+                      <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
+                      <button>Read More <i class="icon icon-icon-2"></i></button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+      
+          <div class="text-center">
+            <a href="/news/" class="btn btn-primary">View All News</a>
+          </div>
+        </div>
+      </div>
 
 </div>
