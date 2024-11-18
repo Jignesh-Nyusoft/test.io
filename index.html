@@ -182,7 +182,7 @@ og_title: LogicStar
               <a href="{{ post.url }}" class="card_box">
                 <div class="square-container">
                   <img
-                    src="{{ post.image }}"
+                    src="{{ post.image.url | relative_url }}"
                     class="card-img-top"
                     alt="{{ post.title }}"
                   />
