@@ -62,11 +62,13 @@ title: News
       <div class="card">
         <a href="{{ post.url }}" class="card_box">
           <div class="square-container">
+            {% if post.image %}
             <img
-            src="{{ post.image.url | relative_url }}"
+            src="{{ post.image | relative_url }}"
               class="card-img-top"
               alt="{{ post.title }}"
             />
+            {% endif %}
           </div>
           <div class="card-body">
             <div class="card_main_con">
@@ -101,12 +103,14 @@ title: News
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <a href="{{ post.url }}" class="card_box">
+            {% if post.image %}
             <div class="square-container">
               <img
-                src="{{ post.image.url | relative_url }}"
+                src="{{ post.image | relative_url }}"
                 class="card-img-top"
                 alt="{{ post.title }}"
               />
+              {% endif %}
             </div>
             <div class="card-body">
               <div class="card_main_con">
