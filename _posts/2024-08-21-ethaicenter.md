@@ -2,10 +2,12 @@
 title: ETH AI Center Affiliation
 short: We're an official affiliate of the ETH Zurich AI Center, continuing our journey in building a network intelligence engine powered by AI/ML.
 date: 2024-10-23
-image: "{{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg"
-og_image: "{{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg"
+# image: "{{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg"
+# og_image: "{{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg"
 layout: post
 ---
+
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/webisite/postimges/post-img-1.jpeg)
 
 We’re excited to announce that NetFabric is now an official affiliate of the ETH Zurich AI Center! This partnership is a significant milestone for us, especially since many of our team members have deep roots in AI research at ETH.
 

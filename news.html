@@ -57,13 +57,13 @@ title: News
       What’s New
   </h2>
   <div class="row">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:1 %}
     <div class="col-lg-4 col-md-6 col-12">
       <div class="card">
         <a href="{{ post.url }}" class="card_box">
           <div class="square-container">
             <img
-              src="{{ post.image.url | relative_url }}"
+            src="{{ post.image.url | relative_url }}"
               class="card-img-top"
               alt="{{ post.title }}"
             />
@@ -97,7 +97,7 @@ title: News
     <h2 class="main-title text-center">Explore More Insights</h2>
 
     <div class="row">
-      {% for post in site.posts limit:1 %}
+      {% for post in site.posts }
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <a href="{{ post.image.url | relative_url }}" class="card_box">
