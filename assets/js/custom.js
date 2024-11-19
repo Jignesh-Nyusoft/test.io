@@ -121,6 +121,8 @@ $('.navbar-toggler').click(function() {
 
 });
 
-
+$(window).on("scroll touchmove", function() {
+  $('.navbar').toggleClass('sticky-top', $(document).scrollTop() > 50);
+});
 });
 
