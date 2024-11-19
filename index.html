@@ -184,7 +184,7 @@ og_title: LogicStar
                 <div class="square-container">
                   {% if post.image %}
                   <img
-                    src="{{ post.image.url | relative_url }}"
+                  src="{{ post.image | relative_url }}"
                     class="card-img-top"
                     alt="{{ post.title }}"
                   />

@@ -958,7 +958,6 @@ color: rgba(67, 77, 100, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height: 56px;
 }
 .card-text {
   font-family: 'Ubuntu';
@@ -1017,6 +1016,7 @@ color: rgba(67, 77, 100, 1);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 24px;
 }
 
 .news_listing_sec .row .col-lg-4 {
@@ -1031,10 +1031,15 @@ color: rgba(67, 77, 100, 1);
   background: #ffffff;
   border: navajowhite;
   box-shadow: 10px 10px 40px 2px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
 }
 
 .card-body {
-  padding: 24px 16px;
+  padding: 24px 16px 16px;
+  min-height: 202px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .pagination {
@@ -1176,21 +1181,67 @@ color: rgba(0, 0, 0, 1);
   }
   /* header menu design */
 
-/* .collapse.navbar-collapse {
-  position: absolute;
-  top: 100px;
-  display: block !important;
-  right: -100%;
+
+.collapse.navbar-collapse {
+  height: 100vh;
 }
-.navbar-collapse.collapse.show {
+ul.navbar-nav.ms-auto.align-items-center {
+  margin-left: 0 !important;
+  align-items: flex-start !important;
+  margin-top: 20px;
+  gap: 0;
+}
+ul.navbar-nav.ms-auto.align-items-center li:last-child a {
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+}
+li.nav-item {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+ul.navbar-nav.ms-auto.align-items-center li:last-child{
+  border-bottom: 0;
+}
+
+.navbar-toggler span.btn-close,
+button.navbar-toggler.collapsed .navbar-toggler-icon {
+  display: block;
+  opacity: 0.8;
+}
+button.navbar-toggler .navbar-toggler-icon,
+button.navbar-toggler.collapsed .btn-close  {
+  display: none;
+  opacity: 0.8;
+}
+button.navbar-toggler:focus {
+  border: 1px solid #c9c9c9 !important;
+  outline: none;
+  box-shadow: none;
+}
+
+button.navbar-toggler:focus,
+button.navbar-toggler {
+  border: 2px solid #6c6a6a !important;
+  outline: none;
+  box-shadow: none;
+  border-radius: 6px;
+  padding: 5px !important;
+  opacity: 1 !important;
+}
+.navbar-collapse.collapse {
   position: fixed;
+  background: #ffffff;
   width: 100%;
   height: 100vh;
-  background: #ffffff;
-  z-index: 11;  
   top: 90px;
-  right: 0;
-} */
+  left: -100% !important;
+  display: block;
+}
+.navbar-collapse.collapse.show {
+  left: 0 !important;
+  padding: 0 20px;
+}
 
 }
 

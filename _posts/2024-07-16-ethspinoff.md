@@ -3,7 +3,7 @@ title: ETH Spin-Off Recognition
 short: We proudly announce that NetFabric was awarded the ETH Zurich Spin-Off label, a new milestone in our journey.
 date: 2024-07-16
 layout: post
-image : "/assets/images/website/postimges/post-img-1.png"
+image: "/assets/images/website/postimges/post-img-4.jpeg"
 
 ---
 
