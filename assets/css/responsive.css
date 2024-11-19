@@ -20,9 +20,19 @@
 }
 
 @media only screen and (max-width: 640px) {
+    
     .footer .menu-list{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
     }
+    a.footer-logo{
+        margin: 0 auto;
+    }
+    .footer .menu-list li.nav-item{
+        width: 48%;
+    }
+
     .footer .menu-wapper{
         gap: 40px;
     }
