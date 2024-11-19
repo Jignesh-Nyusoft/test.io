@@ -4,6 +4,10 @@ short: We're an official affiliate of the ETH Zurich AI Center, continuing our j
 date: 2024-10-23
 # image: "{{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg"
 # og_image: "{{ site.baseurl }}/assets/images/webisite/postimges/post-img-2.jpeg"
+
+image:
+  url: /blob/main/assets/images/website/postimges/post-img-2.jpeg
+
 layout: post
 ---
 

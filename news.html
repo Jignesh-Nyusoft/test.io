@@ -63,7 +63,7 @@ title: News
         <a href="{{ post.url }}" class="card_box">
           <div class="square-container">
             <img
-            src="{{ site.baseurl }}/assets/images/webisite/postimges/post-img-1.jpeg"
+            src="{{ post.image.url | relative_url }}"
               class="card-img-top"
               alt="{{ post.title }}"
             />
