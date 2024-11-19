@@ -106,6 +106,17 @@ $(document).ready(function() {
     }
   })
 
+ 
+    $('.navbar-toggler.collapsed').click(function() {
+        $('.navbar-toggler > span').addClass('close-btn');
+        $('.navbar-toggler > span').removeClass('navbar-toggler-icon');
+   
+});
+$('.navbar-toggler').click(function() {
+  $('.navbar-toggler > span').removeClass('close-btn');
+  $('.navbar-toggler > span').addClass('navbar-toggler-icon');
+
+});
 
 
 });
