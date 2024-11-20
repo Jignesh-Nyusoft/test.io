@@ -1384,7 +1384,12 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   overflow-x: hidden;
 }
 
-.page-title.mt-5.mb-5{
+.page-title.mt-5.mb-5 > .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.page-title.mt-5.mb-5 h1 {
   display: none;
 }
 
