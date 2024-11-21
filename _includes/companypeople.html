@@ -8,16 +8,17 @@
 <div class="col-lg-6 col-12">
     <div class="team_boxes">  
         <div class="team_img">
-            {% if people.image %}
-            <img src="{{ copeople.image | relative_url }}" alt="">
+            {% if copeople.image %}
+            <!-- <img src="{{ copeople.image | relative_url }}" alt=""> -->
+            <a href="{{ copeople.link }}"><img src="{{ site.baseurl }}/{{ copeople.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ copeople.name }}"></a>
             {% endif %}
         </div>
         <div class="team_content">
             <div class="left_content">
-                <h4 class="team_name"> {{ copeople.name }} </h4>
+                <h4 class="team_name"> <a href="{{ copeople.link }}" >{{ copeople.name }}</a></h4>
                 <p class="position"> {{ copeople.role }} </p>
             </div>
-            <a href="{{ copeople.url | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
+            <a href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
         </div>
     </div>
 </div>

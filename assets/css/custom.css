@@ -1307,9 +1307,11 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
 .meet_team_sec .team_content {
   padding: 24px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
-.meet_team_sec h4.team_name {
+.meet_team_sec h4.team_name a {
   font-family: 'Ubuntu';
   font-size: 20px;
   font-weight: 500;
@@ -1318,6 +1320,7 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #EC963C;
+  text-decoration: none;
 }
 .meet_team_sec  p.position {
   margin-bottom: 0;
@@ -1393,8 +1396,38 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   display: none;
 }
 
-.team_main_sec .container{
+.team_main_sec.teampage_team .container{
   max-width: 1200px;
+}
+
+.meet_team_sec.teampage_team p.short_content+p {
+  width: 100%;
+  flex-basis: 100%;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #E8E9EC;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.meet_team_sec.teampage_team .parent_content{
+  padding: 24px;
+}
+
+.meet_team_sec.teampage_team  .team_content{
+  padding: 0;
+}
+
+.teampage_team .parent_content p {
+  margin: 0;
 }
 
 @media only screen and (max-width:1440px){
