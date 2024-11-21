@@ -20,15 +20,15 @@ title: Our Company
                     <img src="{{ site.baseurl }}/assets/images/website/company-left.svg" alt="">
                 </div>
             </div>
-            {% if site.innerpages.our-company %}
+            {% if site.innerpages %}
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="right_side">
                     <h2 class="main_title">
-                         {{ innerpages.our-company.maintitle }}
+                         {{ innerpages.maintitle }}
                     </h2>
-                    <p> {{ innerpages.our-company.jurisdiction }} </p>
+                    <p> {{ innerpages.jurisdiction }} </p>
                     <ul>
-                        <li> <img src="{{ site.baseurl }}/assets/images/website//map.svg"> {{ innerpages.our-company.address }}</li>
+                        <li> <img src="{{ site.baseurl }}/assets/images/website//map.svg"> {{ innerpages.address }}</li>
                     </ul>
                 </div>
             </div>
@@ -41,79 +41,22 @@ title: Our Company
 
 <div class="meet_team_sec">
     <h2 class="main-title text-center">Meet Our Founding team</h2>
-    {% if site.people %}
+    <!-- {% if site.people %} -->
     <div class="container">
         <div class="row">
-            {% for people in site.people %}
-            <div class="col-lg-6 col-12">
-                <div class="team_boxes">
-                    <div class="team_img">
-                        {% if people.image %}
-                        <img src="{{ people.image | relative_url }}" alt="">
-                        {% endif %}
-                    </div>
-                    <div class="team_content">
-                        <div class="left_content">
-                            <h4 class="team_name"> {{ people.name }} </h4>
-                            <p class="position"> {{ people.role }} </p>
-                        </div>
-                        <a href="{{ people.url | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-
-            <!-- <div class="col-lg-6 col-12">
-                <div class="team_boxes">
-                    <div class="team_img">
-                        <img src="{{ site.baseurl }}/assets/images/website//team/mark-512.jpeg" alt="">
-                    </div>
-                    <div class="team_content">
-                        <div class="left_content">
-                            <h4 class="team_name">Boris Paskalev</h4>
-                            <p class="position">CEO</p>
-                        </div>
-                        <a href="#"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="team_boxes">
-                    <div class="team_img">
-                        <img src="{{ site.baseurl }}/assets/images/website//team/veselin-512.jpeg" alt="">
-                    </div>
-                    <div class="team_content">
-                        <div class="left_content">
-                            <h4 class="team_name">Boris Paskalev</h4>
-                            <p class="position">CEO</p>
-                        </div>
-                        <a href="#"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="team_boxes">
-                    <div class="team_img">
-                        <img src="{{ site.baseurl }}/assets/images/website//team/martin-512.jpeg" alt="">
-                    </div>
-                    <div class="team_content">
-                        <div class="left_content">
-                            <h4 class="team_name">Boris Paskalev</h4>
-                            <p class="position">CEO</p>
-                        </div>
-                       <div class="text-center"> 
-                        <a href="#"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a> 
-                    </div>
-                    </div>
-                </div>
-            </div> -->
-            
+            <!-- {% for people in site.people limit:4%} -->
+           
+            <!-- {% endfor %} -->
+            {% include companypeople.html key="Boris" %}
+            {% include companypeople.html key="Mark" %}
+            {% include companypeople.html key="Veselin" %}
+            {% include companypeople.html key="Martin" %}
         </div>
         <div class="meet_team_link">
             <a class="btn btn-styled" href="" role="button">Meet The Whole Team</a>
         </div>
     </div>
-    {% endif %}
+    <!-- {% endif %} -->
 </div>
 
 
