@@ -1393,6 +1393,10 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   display: none;
 }
 
+.team_main_sec{
+  max-width: 1200px;
+}
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;
