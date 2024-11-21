@@ -1,8 +1,10 @@
-{% assign person = site.people | where: "key", include.key | first %}
+{% assign copeople = site.people | where: "key", include.key | first %}
 
-{% if person == nil %}
+{% if copeople == nil %}
 <!-- Warning: Person not found -->
 {% else %}
+
+
 <div class="col-lg-6 col-12">
     <div class="team_boxes">
         <div class="team_img">

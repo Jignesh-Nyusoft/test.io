@@ -20,8 +20,9 @@ title: Our Company
                     <img src="{{ site.baseurl }}/assets/images/website/company-left.svg" alt="">
                 </div>
             </div>
-            {% if site.innerpages %}
+           
             <div class="col-lg-6 col-md-12 col-12">
+                {% if site.innerpages %}
                 <div class="right_side">
                     <h2 class="main_title">
                          {{ innerpages.maintitle }}
@@ -31,8 +32,9 @@ title: Our Company
                         <li> <img src="{{ site.baseurl }}/assets/images/website//map.svg"> {{ innerpages.address }}</li>
                     </ul>
                 </div>
+                {% endif %}
             </div>
-            {% endif %}
+          
         </div>
     </div>
 </div>
@@ -53,7 +55,7 @@ title: Our Company
             {% include companypeople.html key="Martin" %}
         </div>
         <div class="meet_team_link">
-            <a class="btn btn-styled" href="" role="button">Meet The Whole Team</a>
+            <a class="btn btn-styled" href="/our-team/" role="button">Meet The Whole Team</a>
         </div>
     </div>
     <!-- {% endif %} -->
