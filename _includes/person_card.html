@@ -17,9 +17,7 @@
 
 
             {% assign content = person.content | strip_newlines %}
-            {% if content != "" %}
-                <p class="short_content">{{ person.content | markdownify }}</p>
-            {% endif %}
+            {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
         </div> 
     </div>
     <!-- <div class="card h-100">

@@ -1393,7 +1393,7 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   display: none;
 }
 
-.team_main_sec{
+.team_main_sec .container{
   max-width: 1200px;
 }
 
