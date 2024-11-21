@@ -2,7 +2,7 @@
 key: Shiduo
 name: Shiduo Xin
 role: Master's Student
-image: assets/images/team/NetFabric_ShiduoXin.png
+image: "assets/images/website/team/NetFabric_ShiduoXin.png"
 link: https://www.linkedin.com/in/shiduo-xin/
 ---
 

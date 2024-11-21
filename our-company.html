@@ -4,9 +4,9 @@ title: Our Company
 ---
 
 
-<div class="banner_section">
+<!-- <div class="banner_section">
     <h2 class="banner_title">Our Company</h2>
-</div>
+</div> -->
 
 <!-- ================ comon banner design end ================== -->
 
@@ -20,18 +20,19 @@ title: Our Company
                     <img src="{{ site.baseurl }}/assets/images/website/company-left.svg" alt="">
                 </div>
             </div>
+            {% if site.innerpages.our-company %}
             <div class="col-lg-6 col-md-12 col-12">
                 <div class="right_side">
                     <h2 class="main_title">
-                        Pioneering Autonomous AI for Bug Fixing
+                         {{ innerpages.our-company.maintitle }}
                     </h2>
-                    <p>LogicStar AG is a company registered in Switzerland. We are a spinoff from <a href="#" class="para_link">INSAIT the Institute for Computer Science, Artificial Intelligence.</a> The team has a rich history and ongoing applied research, deeptech publications, and prestigious awards with <a href="#" class="para_link">ETH Zurich.</a></p>
-                    <p>At LogicStar, our mission is to streamline software development by eliminating bottlenecks related to bug identification, verification, and repair.</p>
+                    <p> {{ innerpages.our-company.jurisdiction }} </p>
                     <ul>
-                        <li> <img src="{{ site.baseurl }}/assets/images/website//map.svg"> LogicStar AG, Konradstrasse 20, 8005 Zürich</li>
+                        <li> <img src="{{ site.baseurl }}/assets/images/website//map.svg"> {{ innerpages.our-company.address }}</li>
                     </ul>
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -40,24 +41,29 @@ title: Our Company
 
 <div class="meet_team_sec">
     <h2 class="main-title text-center">Meet Our Founding team</h2>
-
+    {% if site.people %}
     <div class="container">
         <div class="row">
+            {% for people in site.people %}
             <div class="col-lg-6 col-12">
                 <div class="team_boxes">
                     <div class="team_img">
-                        <img src="{{ site.baseurl }}/assets/images/website//team/boris-512.jpeg" alt="">
+                        {% if people.image %}
+                        <img src="{{ people.image | relative_url }}" alt="">
+                        {% endif %}
                     </div>
                     <div class="team_content">
                         <div class="left_content">
-                            <h4 class="team_name">Boris Paskalev</h4>
-                            <p class="position">CEO</p>
+                            <h4 class="team_name"> {{ people.name }} </h4>
+                            <p class="position"> {{ people.role }} </p>
                         </div>
-                        <a href="#"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
+                        <a href="{{ people.url | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-12">
+            {% endfor %}
+
+            <!-- <div class="col-lg-6 col-12">
                 <div class="team_boxes">
                     <div class="team_img">
                         <img src="{{ site.baseurl }}/assets/images/website//team/mark-512.jpeg" alt="">
@@ -100,15 +106,14 @@ title: Our Company
                     </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
         </div>
-        <di class="meet_team_link">
+        <div class="meet_team_link">
             <a class="btn btn-styled" href="" role="button">Meet The Whole Team</a>
-        </di>
-        
-
+        </div>
     </div>
+    {% endif %}
 </div>
 
 

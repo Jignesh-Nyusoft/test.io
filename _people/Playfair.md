@@ -2,7 +2,7 @@
 key: Playfair_investor
 name: Playfair Capital
 role: Investor
-image: assets/images/investors/Playfair_Logo.png
+image: "assets/images/website/team/Playfair_Logo.png"
 link: https://playfair.vc/
 ---
 

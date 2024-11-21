@@ -2,7 +2,7 @@
 key: OpenRoles
 name: Open Roles
 role: 
-image: assets/images/team/JoinUs.png
+image: "assets/images/website/team/JoinUs.png"
 link: /company/careers
 ---
 

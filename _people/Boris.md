@@ -2,7 +2,7 @@
 key: Boris
 name: Boris Paskalev
 role: Co-Founder and Advisor
-image: assets/images/team/Boris-cropped.jpeg
+image: "/assets/images/website/team/boris-512.jpeg"
 link: https://www.linkedin.com/in/bpaskalev/
 ---
 
