@@ -10,7 +10,7 @@
         <div class="team_img">
             {% if copeople.image %}
             <!-- <img src="{{ copeople.image | relative_url }}" alt=""> -->
-            <a href="{{ copeople.link }}"><img src="{{ site.baseurl }}/{{ copeople.image | relative_url }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ copeople.name }}"></a>
+            <a href="{{ copeople.link }}"><img src="{{ copeople.image | relative_url }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ copeople.name }}"></a>
             {% endif %}
         </div>
         <div class="team_content">
