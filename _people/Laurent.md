@@ -2,7 +2,7 @@
 key: Laurent
 name: Prof. Laurent Vanbever
 role: Co-Founder and Chief Scientist
-image: "/assets/images/website/team/Laurent-cropped.jpg"
+image: "/assets/images/website/team/Laurent.jpg"
 link: https://nsg.ee.ethz.ch/people/laurent-vanbever/
 ---
 
