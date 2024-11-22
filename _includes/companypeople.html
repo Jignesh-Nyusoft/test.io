@@ -10,7 +10,7 @@
         <div class="team_img">
             {% if copeople.image %}
             <!-- <img src="{{ copeople.image | relative_url }}" alt=""> -->
-            <img src="{{ copeople.image | relative_url }}" class="card-img-top img-fluid" alt="{{ copeople.name }}" data-bs-toggle="modal" data-bs-target="#modal{{ person.key }}">
+            <img src="{{ copeople.image | relative_url }}" class="card-img-top img-fluid" alt="{{ copeople.name }}" data-bs-toggle="modal" data-bs-target="#modal{{ copeople.key }}">
             {% endif %}
         </div>
         <div class="team_content">
@@ -20,7 +20,7 @@
             </div>
             <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
         </div>
-        <div class="modal fade" id="modal{{ person.key }}" tabindex="-1">
+        <div class="modal fade" id="modal{{ copeople.key }}" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header ms-auto border-0">
