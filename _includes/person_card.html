@@ -6,7 +6,7 @@
 <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
     <div class="team_boxes">
         <div class="team_img">
-            <a href="{{ person.link }}"><img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}"></a>
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" ><img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}"></a>
         </div>   
         <div class="parent_content">
             <div class="team_content">
@@ -19,7 +19,44 @@
             {% assign content = person.content | strip_newlines %}
             {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
         </div>
-       
+        <div class="modal" tabindex="-1"></div>
+            <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="28" height="28" rx="14" fill="#EC963C"/>
+                            <path d="M20 8L8 20M8 8L20 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="popupcontent">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="popup_img">
+                                        <img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="popup_content">
+                                        <h3 class="popup_title">
+                                            <h4 class="team_name"> <a href="{{ person.link }}" >{{ person.name }}</a></h4>
+                                        </h3>
+                                        <p class="position"> {{ person.role }} </p>
+                                        <hr>
+                                        <div>
+                                            {% assign content = person.content | strip_newlines %}
+                                            {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </div>
     <!-- <div class="card h-100">
         <div>
