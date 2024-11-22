@@ -1541,6 +1541,10 @@ p.short_content ~ p {
   display: none;
 }
 
+.popup_content  p.short_content+p {
+  display: block;
+}
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;
