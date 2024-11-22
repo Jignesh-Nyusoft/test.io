@@ -5,8 +5,8 @@
 {% else %}
 <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
     <div class="team_boxes">
-        <div class="team_img">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{ person.key }}" ><img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}"></a>
+        <div class="team_img" data-bs-toggle="modal" data-bs-target="#modal{{ person.key }}">
+           <img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
         </div>   
         <div class="parent_content">
             <div class="team_content">

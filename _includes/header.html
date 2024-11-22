@@ -13,18 +13,18 @@
         {% for item in site.data.navigation %}
           {% if item.subtitles %}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ forloop.index }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle {% if page.url == item.url %}active{% endif %}" href="#" id="navbarDropdown{{ forloop.index }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ item.meta_title }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown{{ forloop.index }}">
                 {% for subtitle in item.subtitles %}
-                  <li><a class="dropdown-item" href="{{ site.baseurl }}/{{ subtitle.url }}">{{ subtitle.title }}</a></li>
+                  <li><a class="dropdown-item {% if page.url == subtitle.url %}active{% endif %}" href="{{ site.baseurl }}/{{ subtitle.url }}">{{ subtitle.title }}</a></li>
                 {% endfor %}
               </ul>
             </li>
           {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}</a>
+              <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}</a>
             </li>
           {% endif %}
         {% endfor %}
