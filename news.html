@@ -55,6 +55,7 @@ nav_active: news
     <h2 class="main-title text-center">Explore More Insights</h2>
 
     <div class="row">
+      {% for post in site.posts %}
       {% for post in paginator.posts %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
@@ -83,6 +84,7 @@ nav_active: news
           </a>
         </div>
       </div>
+      {% endfor %}
       {% endfor %}
     </div>
 
