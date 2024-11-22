@@ -1532,6 +1532,10 @@ color: #14213D;
   margin-top: 48px;
 }
 
+.privacy_policy_sec .container {
+  max-width: 770px;
+}
+
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
