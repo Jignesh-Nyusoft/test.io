@@ -88,16 +88,22 @@ nav_active: news
 
   </div>
 
-
+  {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="prev disable"> << Previous</a>
     {% endif %}
     
     {% for page in (1..paginator.total_pages) %}
-    <a href="{{ paginator.paginate_path | replace: ':num', page }}" 
-       class="page-number {% if page == paginator.page %}active{% endif %}">{{ page }}</a>
-
+    <!-- <a href="{{ paginator.paginate_path | replace: ':num', page }}"  -->
+       <!-- class="page-number {% if page == paginator.page %}active{% endif %}">{{ page }}</a> -->
+       {% if page == paginator.page %}
+       <em>{{ page }}</em>
+     {% elsif page == 1 %}
+       <a href="{{ site.paginate_path | relative_url | replace: 'page:num/', '' }}">{{ page }}</a>
+     {% else %}
+       <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+     {% endif %}
 
     {% endfor %}
     
@@ -105,7 +111,7 @@ nav_active: news
     <a href="{{ paginator.next_page_path }}" class="next">Next >> </a>
     {% endif %}
   </div>  
-
+  {% endif %}
 
 </div>
 
