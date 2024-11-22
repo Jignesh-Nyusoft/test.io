@@ -9,8 +9,7 @@ page_link:
     url: news
   - meta_title: Contact Us
     url: contact
-  - meta_title: Privacy Policy
-    url: privacypolicy
+
 
 social_icon:
   - icon_class: icon-icon-5
