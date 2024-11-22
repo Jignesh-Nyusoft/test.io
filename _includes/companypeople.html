@@ -46,8 +46,8 @@
                                         </h3>
                                         <p class="position"> {{ copeople.role }} </p>
                                         <div>
-                                            {% assign content = person.content | strip_newlines %}
-                                                {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
+                                            {% assign content = copeople.content | strip_newlines %}
+                                            {% if content != "" %} <p class="short_content">{{ copeople.content | markdownify }}</p> {% endif %}
                                         </div>
                                     </div>
                                 </div>
