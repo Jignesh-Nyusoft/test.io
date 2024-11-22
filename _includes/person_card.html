@@ -19,10 +19,10 @@
             {% assign content = person.content | strip_newlines %}
             {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
         </div>
-        <div class="modal" id="Modal{{ person.key }}" tabindex="-1">
+        <div class="modal" id="modal{{ person.key }}" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header ms-auto border-0">
                       <button type="button" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="28" height="28" rx="14" fill="#EC963C"/>
@@ -44,7 +44,6 @@
                                             <h4 class="team_name"> <a href="{{ person.link }}" >{{ person.name }}</a></h4>
                                         </h3>
                                         <p class="position"> {{ person.role }} </p>
-                                        <hr>
                                         <div>
                                             {% assign content = person.content | strip_newlines %}
                                             {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}

@@ -1430,6 +1430,46 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   margin: 0;
 }
 
+/* out team modal css */
+
+.team_boxes .modal-header button {
+  border: 0;
+  background: none;
+}
+
+.team_boxes  .modal-dialog.modal-dialog-centered {
+  --bs-modal-width: 970px;
+}
+.popupcontent .popup_img {
+  position: relative;
+  padding: 45.4% 48%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.popupcontent .popup_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.meet_team_sec.teampage_team .modal p.short_content+p {
+  margin-top: 24px;
+  padding-top: 24px;
+  -webkit-line-clamp: 10;
+}
+
+.popupcontent .row{
+  margin-top: 0;
+}
+
+.team_boxes .modal-header.ms-auto.border-0 {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;
