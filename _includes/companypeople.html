@@ -10,12 +10,12 @@
         <div class="team_img">
             {% if copeople.image %}
             <!-- <img src="{{ copeople.image | relative_url }}" alt=""> -->
-            <a href="{{ copeople.link }}"><img src="{{ copeople.image | relative_url }}" class="card-img-top img-fluid" alt="{{ copeople.name }}"></a>
+            <img src="{{ copeople.image | relative_url }}" class="card-img-top img-fluid" alt="{{ copeople.name }}">
             {% endif %}
         </div>
         <div class="team_content">
             <div class="left_content">
-                <h4 class="team_name"> <a href="{{ copeople.link }}" >{{ copeople.name }}</a></h4>
+                <h4 class="team_name"> <a href="{{ teamdetail.url }}" >{{ copeople.name }}</a></h4>
                 <p class="position"> {{ copeople.role }} </p>
             </div>
             <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>

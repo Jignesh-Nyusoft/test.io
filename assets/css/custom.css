@@ -1537,6 +1537,10 @@ color: #14213D;
 }
 
 
+p.short_content ~ p {
+  display: none;
+}
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;

@@ -2,7 +2,7 @@
 key: Mark
 name: Mark Müller
 role: CTO
-image: "/assets/images/website/team/mark-512.jpg"
+image: "/assets/images/website/team/mark-512.jpeg"
 link: https://www.linkedin.com/in/mark-m%C3%BCller-8bb4b1140/
 ---
 PhD from <a href="https://ethz.ch/">ETH Zurich</a>, 15+ papers and 400+ citations. Notable industry collaborations.
