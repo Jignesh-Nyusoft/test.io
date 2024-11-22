@@ -56,7 +56,6 @@ nav_active: news
 
     <div class="row">
       {% for post in paginator.posts %}
-      {% for post in site.posts %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <a href="{{ post.url }}" class="card_box">
@@ -85,7 +84,6 @@ nav_active: news
         </div>
       </div>
       {% endfor %}
-      {% endfor %}
     </div>
 
   </div>
@@ -108,15 +106,19 @@ nav_active: news
     {% endif %}
   </div>  
 
-  <div class="software_main_sec">
-    <div class="container">
-      <div class="softwaredev_section">
-        <h2 class="main-title">
-            Ready to Transform Your <br>Software Development?
-        </h2>
-        <p class="software_para">Discover how our AI-driven solutions can streamline your bug resolution process and enhance your team's productivity. Get in touch today! Contact Us to schedule a demo or learn more about our offerings!</p>
-        <a class="btn btn-styled" href="" role="button">Contact Us</a>
-      </div>
+
+</div>
+
+
+
+<div class="software_main_sec">
+  <div class="container">
+    <div class="softwaredev_section">
+      <h2 class="main-title">
+          Ready to Transform Your <br>Software Development?
+      </h2>
+      <p class="software_para">Discover how our AI-driven solutions can streamline your bug resolution process and enhance your team's productivity. Get in touch today! Contact Us to schedule a demo or learn more about our offerings!</p>
+      <a class="btn btn-styled" href="" role="button">Contact Us</a>
     </div>
   </div>
 </div>
