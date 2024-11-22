@@ -1,53 +1,9 @@
 ---
 layout: default
 title: News
+paginate: true
+nav_active: news
 ---
-
-<!-- <style>
-  .card a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  
-  .card a:hover {
-    text-decoration: none;
-  }
-
-  .card-date {
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    background-color: transparent;
-    border-top: none;
-  }
-
-  .square-container {
-      position: relative;
-      width: 100%;
-      padding-top: 100%; 
-      overflow: hidden;
-    }
-
-    .square-container img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: auto;
-      margin: auto;
-    }
-</style> -->
-
-
-
-<!-- ================ comon banner design ================== -->
-
-<!-- <div class="banner_section">
-  <h2 class="banner_title">Our News</h2>
-</div> -->
-
-<!-- ================ comon banner design end ================== -->
 
 
 <!-- ================ latest banner design start ================== -->
@@ -148,15 +104,17 @@ title: News
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next >> </a>
     {% endif %}
-</div>  
+  </div>  
 
-<div class="software_main_sec">
-  <div class="softwaredev_section">
-    <h2 class="main-title">
-        Ready to Transform Your <br>Software Development?
-    </h2>
-    <p class="software_para">Discover how our AI-driven solutions can streamline your bug resolution process and enhance your team's productivity. Get in touch today! Contact Us to schedule a demo or learn more about our offerings!</p>
-    <a class="btn btn-styled" href="" role="button">Contact Us</a>
+  <div class="software_main_sec">
+    <div class="container">
+      <div class="softwaredev_section">
+        <h2 class="main-title">
+            Ready to Transform Your <br>Software Development?
+        </h2>
+        <p class="software_para">Discover how our AI-driven solutions can streamline your bug resolution process and enhance your team's productivity. Get in touch today! Contact Us to schedule a demo or learn more about our offerings!</p>
+        <a class="btn btn-styled" href="" role="button">Contact Us</a>
+      </div>
+    </div>
   </div>
-</div>
 </div>
