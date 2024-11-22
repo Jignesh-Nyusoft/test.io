@@ -1470,6 +1470,69 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   right: 0;
 }
 
+
+.privacy_policy_sec:after{
+  background: radial-gradient(#ec963c1c, #ec963c0d);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 0 0 267px #ec963c36;
+}
+.privacy_policy_sec:before{
+  background: radial-gradient(#ec963c1c, #ec963c0d);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 0 0 267px #ec963c36;
+}
+
+.privacy_policy_sec{
+  margin: 60px 0 80px;
+}
+
+.privacy_policy_sec .main_content p{
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #14213D;
+}
+.content_box h2{
+  font-family: 'Ubuntu';
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+color: #14213D;
+}
+
+.content_box p a{
+  color: #EC963C;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.content_box{
+  margin-top: 48px;
+}
+
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;
