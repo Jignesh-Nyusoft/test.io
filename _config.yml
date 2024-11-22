@@ -25,9 +25,3 @@ exclude:
 google_analytics_tag_id: G-61H18LPX39
 google_tag_manager_container_id: GTM-WBM46568
 
-
-# paginate: 5
-# paginate_path: "/posts/page:num/"
-
-# plugins:
-#   - jekyll-paginate
