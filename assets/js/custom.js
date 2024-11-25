@@ -91,10 +91,10 @@ $(document).ready(function() {
     dots: false,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 1, // Very short timeout for continuous scrolling
+    autoplayTimeout: 0, // Very short timeout for continuous scrolling
     autoplaySpeed: 5000, // Adjust this for smooth scrolling speed
     autoplayHoverPause: false,
-    slideTransition: 'linear', 
+    // slideTransition: 'linear', 
     responsive : {
         // breakpoint from 0 up
         0 : {
