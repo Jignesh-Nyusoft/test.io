@@ -1673,6 +1673,7 @@ text-decoration-line: underline;
 .contactmain_section{
   background: url(../images/website/contact-right-bg.svg) top right no-repeat;
   margin: 60px 0 80px;
+  position: relative;
 }
 .address_section {
   background: url(../images/website/address-detail-bg.svg);
@@ -1770,6 +1771,8 @@ label.form-label {
   border: 1px solid #E8E9EC;
   background: #ffffff !important;
   padding: 11px;
+  position: relative;
+z-index: 111;
 }
 .contactmain_section .form-group input,
 .contactmain_section .form-group textarea{
