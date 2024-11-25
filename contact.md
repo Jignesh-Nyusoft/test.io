@@ -73,7 +73,7 @@ title: Contact Us
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="{{ site.baseurl }}images/website/contact-right.svg">
+                <img src="{{ site.baseurl }}/images/website/contact-right.svg">
             </div>
         </div>
     </div>

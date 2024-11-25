@@ -1726,9 +1726,7 @@ text-decoration-line: underline;
   padding-left: 0;
 }
 
-.contactmain_section .btn .icon{
-  margin-left: 8px;
-}
+
 
 .contactmain_section .btn{
   display: flex;
@@ -2056,6 +2054,15 @@ button.navbar-toggler {
 .slider_section h2.main-title {
   margin-top: 0;
   text-align: center;
+}
+.privacy_policy_sec:before, .contactmain_section:before{
+  width: auto;
+}
+.contactmain_section form {
+  margin-bottom: 40px;
+}
+.address_section .row{
+  row-gap: 15px;
 }
 }
   
