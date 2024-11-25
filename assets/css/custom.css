@@ -850,17 +850,23 @@ color: #434D64;
   /* background-image: url(../images/website/common-banner-bg.svg); */
   padding: 65px 0 57px;
   background-size: cover;
-  background:linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%)
+  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%);
+  position: relative;
+  overflow-x: hidden;
 }
 .banner_section:before {
   content: '';
   background: url(../images/website/common-banner-bg.svg);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
   height: 100%;
   z-index: 0;
+  background-repeat: no-repeat;
+  /* left: 50%; */
+  transform: translateX(-50%);
+  background-size: cover;
 }
 
 .banner_title{

@@ -100,7 +100,9 @@ $(document).ready(function() {
     // itemsMobile: [479,1],
     autoplay: true,
     autoplaySpeed: 3000,
+    autoplayTimeout: 1,
     autoplayHoverPause:true,
+    slideTransition: 'linear', 
     responsive : {
         // breakpoint from 0 up
         0 : {
