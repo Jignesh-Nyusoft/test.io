@@ -847,11 +847,22 @@ color: #434D64;
 /*======== news banner section design ========*/
 
 .banner_section {
-  background-image: url(../images/website/common-banner-bg.svg);
+  /* background-image: url(../images/website/common-banner-bg.svg); */
   padding: 65px 0 57px;
   background-size: cover;
-  background:linear-gradient(360deg, #FFFDF1 0%, #FFFFFF 100%)
+  background:linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%)
 }
+.banner_section:before {
+  content: '';
+  background: url(../images/website/common-banner-bg.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .banner_title{
   font-family: 'Ubuntu';
   font-size: 48px;
