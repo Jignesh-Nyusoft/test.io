@@ -847,9 +847,10 @@ color: #434D64;
 /*======== news banner section design ========*/
 
 .banner_section {
-  background: url(../images/website/common-banner-bg.svg) center center no-repeat;
+  background-image: url(../images/website/common-banner-bg.svg);
   padding: 65px 0 57px;
   background-size: cover;
+  background:linear-gradient(360deg, #FFFDF1 0%, #FFFFFF 100%)
 }
 .banner_title{
   font-family: 'Ubuntu';

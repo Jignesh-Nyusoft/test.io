@@ -93,6 +93,11 @@ $(document).ready(function() {
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
+    autoplaySpeed: 1000,
+    fluidSpeed:true,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall: [979,3],
+    itemsMobile: [479,1],
     responsive : {
         // breakpoint from 0 up
         0 : {
