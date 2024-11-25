@@ -910,6 +910,9 @@ color: rgba(67, 77, 100, 1);
   font-size: 20px;
   text-decoration: none;
 }
+.card-date .link .icon:before{
+  font-size: 10px;
+}
 .latest_banner .card-date .link .icon:before{
   font-size: 12px;
 }
@@ -1003,6 +1006,7 @@ color: rgba(67, 77, 100, 1);
   border: none;
   background: none;
   color: rgba(236, 150, 60, 1);
+  text-decoration: none !important;
 }
 
 .card-date .link .icon{
@@ -1017,7 +1021,7 @@ color: rgba(67, 77, 100, 1);
   margin-left: 10px;
 }
 
-.card-date link .icon::before{
+.card-date .link .icon::before{
   font-size: 10px;
 }
 
