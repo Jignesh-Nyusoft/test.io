@@ -91,9 +91,9 @@ $(document).ready(function() {
     dots: false,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 0.1, // Very short timeout for continuous scrolling
-    autoplaySpeed: 5000, // Adjust this for smooth scrolling speed
-    autoplayHoverPause: false,
+    // autoplayTimeout: 0.1, 
+    // autoplaySpeed: 5000, 
+    // autoplayHoverPause: false,
     // slideTransition: 'linear', 
     responsive : {
         // breakpoint from 0 up
