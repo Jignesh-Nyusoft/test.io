@@ -853,6 +853,8 @@ color: #434D64;
   background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%);
   position: relative;
   overflow-x: hidden;
+  -webkit-gradient(linear, left top, right bottom,     color-stop(0.00,  rgb(255 253 241)));
+  z-index: 0;
 }
 .banner_section:before {
   content: '';

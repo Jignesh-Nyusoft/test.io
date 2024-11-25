@@ -91,9 +91,9 @@ $(document).ready(function() {
     dots: false,
     nav: false,
     autoplay: true,
+        autoplaySpeed: 7000, // Slow, smooth scrolling speed
+        autoplayHoverPause: false, // Disable pause on hover
     slideTransition: 'linear',
-    autoplayTimeout: 0.1, // Almost no delay
-    autoplaySpeed: 8000, 
     responsive : {
         // breakpoint from 0 up
         0 : {
