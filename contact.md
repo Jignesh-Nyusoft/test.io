@@ -8,7 +8,7 @@ title: Contact Us
 
 <div class="contactmain_section">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="main_title_sec">
                     <h2 class="main_title">We're Here to Help You, Connect with LogicStar AI</h2>
@@ -73,7 +73,9 @@ title: Contact Us
                 </form>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
-                <img src="{{ site.baseurl }}/images/website/contact-right.svg">
+                <div class="contact_right_sec">
+                    <img src="{{ site.baseurl }}/assets/images/website/contact-right.svg">
+                </div>
             </div>
         </div>
     </div>

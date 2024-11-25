@@ -1735,10 +1735,12 @@ text-decoration-line: underline;
   gap: 8px;
 }
 .main_title_sec .main_title {
-  margin-bottom: 16px;
+  margin-bottom: 19px;
+  font-weight: 500;
+
 }
 .main_title_sec {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .main_title_sec p{
   color: #434D64;
@@ -1748,6 +1750,26 @@ text-decoration-line: underline;
   line-height: 24px;
   text-align: left;
 }
+
+.contact_right_sec img{
+  margin-left: 35px;
+}
+
+label.form-label {
+  color: #14213D;
+  font-weight: 500;
+}
+
+.contactmain_section input.form-control {
+  border: 1px solid #E8E9EC;
+  background: #ffffff !important;
+  padding: 11px;
+}
+.contactmain_section .form-group input,
+.contactmain_section .form-group textarea{
+  background: #ffffff;
+}
+
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
@@ -1772,6 +1794,9 @@ text-decoration-line: underline;
   .latest_banner{
     max-width: 1200px;
     margin: 60px 15px 80px;
+  }
+  .contact_right_sec img{
+    margin-left: 0;
   }
 }
 
