@@ -1483,12 +1483,13 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   z-index: 0;
   box-shadow: 0 0 267px #ec963c36;
 }
-.privacy_policy_sec:before{
+.privacy_policy_sec:before,
+.contactmain_section:before{
   background: radial-gradient(#ec963c1c, #ec963c0d);
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 500px;
   height: 500px;
   border-radius: 50%;
@@ -1612,7 +1613,100 @@ text-decoration-line: underline;
   box-shadow: 0 0 100px #ec963c1c;
 } */
 
+.termscondition-page .privacy_policy_sec .main_content p{
+  color: #434D64;
+}
 
+/* ==  custom checkbox css  == */
+
+.form-check-label{
+  position: relative;
+  display: block;
+  user-select: none;
+  cursor: pointer;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #434D64;
+}
+
+.form-check-label input{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  background-color: #eeeeee;
+}
+.form-check-label input:checked ~ .checkmark{
+  background-color: #EC963C;  
+}
+.form-check-label input ~ .checkmark:after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border: 0 3px 3px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.form-check-label input:checked ~ .checkmark:after{
+  display: block;
+}
+.contactmain_section{
+  background: url(../images/website/contact-right-bg.svg) top right no-repeat;
+  margin-top: 60px 0 80px;
+}
+.address_section{
+  background: url(../images/website/address-detail-bg.svg);
+}
+
+.address_section .address_icon{
+  background: linear-gradient(180deg, #4F80EF 0%, #254EB1 100%);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address_section .address_icon i{
+  color: #ffffff;
+}
+
+.address_box{
+  padding: 24px;
+  box-shadow: 0px 0px 40px 1px #00000014;
+  border-radius: 24px;
+  text-align: center;
+}
+.address_content p{
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #14213D;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.address_section{
+  margin-bottom: 80px;
+}
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;

@@ -1,64 +1,114 @@
 ---
 layout: default
-title: Keep me updated!
+title: Contact Us
 ---
 
 
-<p>
-<form
-  action="https://formcarry.com/s/iy9helLGmjq"
-  method="POST"
->
-    <div class="mb-3">
-        <label for="userTypeDescription" class="form-label">What kind of updates are you interested in?</label>
-        <div class="btn-group-toggle mt-2" data-toggle="buttons">
-            <input type="radio" class="btn-check" id="customer" autocomplete="off" value="customer" name="updateType" checked>
-            <label class="btn btn-outline-secondary" for="customer"><i class="fas fa-user"></i> Customer</label>
 
-            <input type="radio" class="btn-check" id="employee" autocomplete="off" value="employee" name="updateType">
-            <label class="btn btn-outline-secondary" for="employee"><i class="fas fa-user-tie"></i> Employee</label>
 
-            <input type="radio" class="btn-check" id="investor" autocomplete="off" value="investor" name="updateType">
-            <label class="btn btn-outline-secondary" for="investor"><i class="fas fa-hand-holding-usd"></i> Investor</label>
-
-            <input type="radio" class="btn-check" id="general" autocomplete="off" value="general" name="updateType">
-            <label class="btn btn-outline-secondary" for="general"><i class="fas fa-cog"></i> General</label>
+<div class="contactmain_section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="main_title_sec">
+                    <h2 class="main_title">We're Here to Help You, Connect with LogicStar AI</h2>
+                    <p>Have questions, need support, or just want to learn more?</p>
+                </div>
+                <form action="https://formcarry.com/s/iy9helLGmjq" method="POST">
+                    <!-- <div class="">
+                        <label for="userTypeDescription" class="form-label">We're Here to Help You, Connect with LogicStar AI</label>
+                        <div class="btn-group-toggle mt-2" data-toggle="buttons">
+                            <input type="radio" class="btn-check" id="customer" autocomplete="off" value="customer" name="updateType" checked>
+                            <label class="btn btn-outline-secondary" for="customer"><i class="fas fa-user"></i> Customer</label>
+                            <input type="radio" class="btn-check" id="employee" autocomplete="off" value="employee" name="updateType">
+                            <label class="btn btn-outline-secondary" for="employee"><i class="fas fa-user-tie"></i> Employee</label>
+                            <input type="radio" class="btn-check" id="investor" autocomplete="off" value="investor" name="updateType">
+                            <label class="btn btn-outline-secondary" for="investor"><i class="fas fa-hand-holding-usd"></i> Investor</label>
+                            <input type="radio" class="btn-check" id="general" autocomplete="off" value="general" name="updateType">
+                            <label class="btn btn-outline-secondary" for="general"><i class="fas fa-cog"></i> General</label>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">First Name *</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">Last Name *</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <!-- <div class="">
+                        <label for="company" class="form-label">Company (optional)</label>
+                        <input type="text" class="form-control" id="company" name="company">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="comments" class="form-label">Message    </label>
+                        <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Describe your query here"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="privacyPolicy"> By submitting the form, I agree that an e-mail with the form details will be transmitted to a LogicStar team member
+                            <input type="checkbox" class="form-check-input" id="privacyPolicy" name="privacyPolicy" required>
+                            <span class="checkmark"></span>
+                            <!-- <a href="{{ site.baseurl }}/company/privacy">privacy policy</a>. -->
+                         </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-styled w-100">Submit <i class="icon icon-icon-2"></i></button>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="{{ site.baseurl }}/contact-right.svg">
+            </div>
         </div>
     </div>
+<div>
 
-    <div class="mb-3">
-        <label for="firstName" class="form-label">First Name *</label>
-        <input type="text" class="form-control" id="firstName" name="firstName" required>
-    </div>
-    <div class="mb-3">
-        <label for="lastName" class="form-label">Last Name *</label>
-        <input type="text" class="form-control" id="lastName" name="lastName" required>
-    </div>
-    <div class="mb-3">
-        <label for="email" class="form-label">Email Address *</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="mb-3">
-        <label for="company" class="form-label">Company (optional)</label>
-        <input type="text" class="form-control" id="company" name="company">
-    </div>
-    <div class="mb-3">
-        <label for="comments" class="form-label">Comments (optional)</label>
-        <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
-    </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="privacyPolicy" name="privacyPolicy" required>
-        <label class="form-check-label" for="privacyPolicy">I accept the <a href="{{ site.baseurl }}/company/privacy">privacy policy</a>.</label>
-    </div>
-    <button type="submit" class="btn btn-primary btn-styled">Submit</button>
-</form>
-</p>
 
-<p>
+<div class="address_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="address_box">
+                    <div class="address_icon">
+                        <i class="icon icon-icon-11"></i>
+                    </div>
+                    <div class="address_content">
+                        <p>LogicStar AG, Konradstrasse 20, 8005 Zürich, Switzerland</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="address_box">
+                    <div class="address_icon">
+                        <i class="icon icon-icon-12"></i>
+                    </div>
+                    <div class="address_content">
+                        <p>@borispaskalev</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="address_box">
+                    <div class="address_icon">
+                        <i class="icon icon-icon-13"></i>
+                    </div>
+                    <div class="address_content">
+                        <p>info@logicstar.ai </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <p>
 You can always contact us through one of the following email addresses:
-</p>
+</p> -->
 
-<table class="table table-hover">
+<!-- <table class="table table-hover">
     <thead class="table-dark">
         <tr>
             <th>Email</th>
@@ -83,7 +133,7 @@ You can always contact us through one of the following email addresses:
             <td>General information and inquiries</td>
         </tr>
     </tbody>
-</table>
+</table> -->
 
 <script>
     // Function to get query parameter by name
