@@ -91,10 +91,9 @@ $(document).ready(function() {
     dots: false,
     nav: false,
     autoplay: true,
-    // autoplayTimeout: 0.1, 
-    // autoplaySpeed: 5000, 
-    // autoplayHoverPause: false,
-    // slideTransition: 'linear', 
+    slideTransition: 'linear',
+    autoplayTimeout: 0.1, // Almost no delay
+    autoplaySpeed: 8000, 
     responsive : {
         // breakpoint from 0 up
         0 : {
