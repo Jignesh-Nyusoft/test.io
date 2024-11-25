@@ -906,14 +906,15 @@ color: rgba(67, 77, 100, 1);
 
 }
 
-.latest_banner .card-date button{
+.latest_banner .card-date .link{
   font-size: 20px;
+  text-decoration: none;
 }
-.latest_banner .card-date button .icon:before{
+.latest_banner .card-date .link .icon:before{
   font-size: 12px;
 }
 
-.latest_banner .card-date button .icon{
+.latest_banner .card-date .link .icon{
   width: 28px;
   height: 28px;
 }

@@ -34,10 +34,9 @@ nav_active: news
               <small class="text-muted"
                 >{{ post.date | date: "%B %d, %Y" }}</small
               >
-              <button>Read More <i class="icon icon-icon-2"></i> </button>
+              <a class="link" href="">Read More <i class="icon icon-icon-2"></i> </a>
             </div>
           </div>
-          
         </a>
       </div>
     </div>
@@ -76,7 +75,7 @@ nav_active: news
                 <small class="text-muted"
                   >{{ post.date | date: "%B %d, %Y" }}</small
                 >
-                <a href="{{ post.url | relative_url }}">Read More <i class="icon icon-icon-2"></i> </a>
+                <a href="{{ post.url | relative_url }}" class="link">Read More <i class="icon icon-icon-2"></i> </a>
               </div>
             </div>
           </a>
