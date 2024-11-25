@@ -1673,8 +1673,11 @@ text-decoration-line: underline;
   background: url(../images/website/contact-right-bg.svg) top right no-repeat;
   margin: 60px 0 80px;
 }
-.address_section{
+.address_section {
   background: url(../images/website/address-detail-bg.svg);
+  width: 100%;
+  background-position: bottom center;
+  background-size: cover;
 }
 
 .address_section .address_icon{
@@ -1703,6 +1706,7 @@ text-decoration-line: underline;
   border-radius: 24px;
   text-align: center;
   min-height: 100%;
+  background: #ffffff;
 }
 .address_content p{
   font-family: 'Ubuntu';
@@ -1753,6 +1757,7 @@ text-decoration-line: underline;
 
 .contact_right_sec img{
   margin-left: 35px;
+  max-width: 100%;
 }
 
 label.form-label {

@@ -54,27 +54,28 @@ nav_active: news
     <h2 class="main-title text-center">Explore More Insights</h2>
 
     <div class="row">
-      {% for post in site.posts %}
+      {% assign news = site.news | sort: "date" | reverse %}
+      {% for story in news %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
-          <a href="{{ post.url }}" class="card_box">
-            {% if post.image %}
+          <a href="{{ story.url | relative_url }}" class="card_box">
+            {% if story.image %}
             <div class="square-container">
               <img
-                src="{{ post.image | relative_url }}"
+                src="{{ story.image | relative_url }}"
                 class="card-img-top"
-                alt="{{ post.title }}"
+                alt="{{ story.title }}"
               />
               {% endif %}
             </div>
             <div class="card-body">
               <div class="card_main_con">
-                  <h3 class="card-title">{{ post.title }}</h3>
-                  <p class="card-text">{{ post.short }}</p>
+                  <h3 class="card-title">{{ story.title }}</h3>
+                  <p class="card-text">{{ story.short }}</p>
               </div>
               <div class="card-date">
                 <small class="text-muted"
-                  >{{ post.date | date: "%B %d, %Y" }}</small
+                  >{{ story.date | date: "%B %d, %Y" }}</small
                 >
                 <button>Read More <i class="icon icon-icon-2"></i> </button>
               </div>
