@@ -90,18 +90,10 @@ $(document).ready(function() {
     margin: 30,
     dots: false,
     nav: false,
-    // autoplay:true,
-    // autoplayTimeout:3000,
-    // autoplayHoverPause:true,
-    // autoplaySpeed: 1000,
-    // fluidSpeed:true,
-    // itemsDesktop : [1199,3],
-    // itemsDesktopSmall: [979,3],
-    // itemsMobile: [479,1],
     autoplay: true,
-    autoplaySpeed: 3000,
-    autoplayTimeout: 1,
-    autoplayHoverPause:true,
+    autoplayTimeout: 1, // Very short timeout for continuous scrolling
+    autoplaySpeed: 5000, // Adjust this for smooth scrolling speed
+    autoplayHoverPause: false,
     slideTransition: 'linear', 
     responsive : {
         // breakpoint from 0 up
