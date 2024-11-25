@@ -1545,22 +1545,26 @@ p.short_content ~ p {
   display: block;
 }
 
-.terms_listing li{
+.terms_listing li {
   font-family: 'Ubuntu';
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
   color: #434D64;
-  padding-left: 30px;
+  padding-left: 20px;
+  position: relative;
 }
 
-.terms_listing li:before{
+.terms_listing li:before {
   content: '';
   width: 6px;
   height: 6px;
   background: #434D64;
   border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 11px;
 }
 .terms_listing li a{
   color: #EC963C;
@@ -1571,9 +1575,43 @@ line-height: 28px;
 text-align: left;
 text-decoration-line: underline;
 }
-.terms_listing{
+.terms_listing {
   list-style: none;
+  padding-left: 0;
 }
+
+.termscondition-page .privacy_policy_sec .main_content p{
+  color: #434D64;
+}
+.privacy_policy_sec {
+  position: relative;
+}
+/* .privacy_policy_sec:before {
+  background: radial-gradient(#ec963c1c, #ec963c0d);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 100px #ec963c1c;
+}
+
+.privacy_policy_sec:after{
+  background: radial-gradient(#ec963c1c, #ec963c0d);
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: -120px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: -1;
+  box-shadow: 0 0 100px #ec963c1c;
+} */
+
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
