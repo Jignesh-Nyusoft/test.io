@@ -81,19 +81,20 @@ nav_active: news
         </div>
       </div>
       {% endfor %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
+        {% endif %}
+        
+        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% endif %}
+      </div>
     </div>
 
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
-      {% endif %}
-      
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% endif %}
-    </div>
+   
     
 
   </div>

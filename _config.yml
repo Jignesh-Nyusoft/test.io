@@ -33,6 +33,6 @@ google_tag_manager_container_id: GTM-WBM46568
 #       output: true
 
 
-paginate: 6 
+paginate: 3 
 paginate_path: "news/page:num"
  
