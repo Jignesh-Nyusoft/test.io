@@ -29,7 +29,7 @@ google_tag_manager_container_id: GTM-WBM46568
 collections:
   news:
     output: true
-     permalink: /post/:title/
+    #  permalink: /post/:title/
     people:
       output: true
  
