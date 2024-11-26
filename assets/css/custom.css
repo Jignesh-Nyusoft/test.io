@@ -1929,7 +1929,7 @@ body.newsdetail .banner_section{
 }
 
 .fade-down-bg {
-  background-image: url('/assets/images/website/gradient.svg'); /* Add your background image */
+  background-image: url(../images/website/gradient.svg); /* Add your background image */
   background-position: center top; /* Start position */
   background-size: cover;
   background-repeat: no-repeat;
