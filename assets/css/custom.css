@@ -853,10 +853,10 @@ color: #434D64;
   /* background-image: url(../images/website/common-banner-bg.svg); */
   padding: 65px 0 57px;
   background-size: cover;
-  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%);
+
   position: relative;
   overflow-x: hidden;
-  -webkit-gradient(linear, left top, right bottom,     color-stop(0.00,  rgb(255 253 241)));
+  -webkit-gradient: (linear, left top, right bottom,     color-stop(0.00,  rgb(255 253 241)));
   z-index: 0;
 }
 .banner_section:before {
@@ -1929,10 +1929,8 @@ body.newsdetail .banner_section{
 }
 
 .fade-down-bg {
-  background-image: url(../images/website/gradient.svg); /* Add your background image */
-  background-position: center top; /* Start position */
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url(../images/website/gradient.svg);  */
+  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%);
   opacity: 0;
   transform: translateY(-30px); /* Move background upwards initially */
   transition: opacity 3s ease-out, transform 3s ease-out;
