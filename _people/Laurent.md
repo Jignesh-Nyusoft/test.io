@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Laurent
 name: Prof. Laurent Vanbever
 role: Co-Founder and Chief Scientist

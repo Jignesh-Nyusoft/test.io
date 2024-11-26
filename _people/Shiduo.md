@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Shiduo
 name: Shiduo Xin
 role: Master's Student

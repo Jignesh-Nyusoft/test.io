@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Batuhan
 name: Batuhan Tomekce
 role: MSC CANDIDATE

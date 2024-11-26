@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Clemens
 name: Clemens Klopfstein
 role: Junior Software Engineer

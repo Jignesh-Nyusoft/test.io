@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Simon
 name: Dr. Simon Scherrer
 role: Lead Network Engineer

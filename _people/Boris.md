@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Boris
 name: Boris Paskalev
 role: Co-Founder and Advisor

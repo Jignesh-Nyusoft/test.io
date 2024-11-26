@@ -1,4 +1,5 @@
 ---
+layout: default
 key: musti
 name: Mustafa Zeqiri
 role: ENGINEER

@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Mark
 name: Mark Müller
 role: CTO

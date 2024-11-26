@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Playfair_investor
 name: Playfair Capital
 role: Investor

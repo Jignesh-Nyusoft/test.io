@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Kostas
 name: Konstantinos Vergopoulos
 role: MSC CANDIDATE

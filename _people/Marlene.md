@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Marlene
 name: Marlene Brakhane
 role: Co-Founder and COO

@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Tobias
 name: Dr. Tobias Bühler
 role: Co-Founder and CTO

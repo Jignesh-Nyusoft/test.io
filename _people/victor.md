@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Victor 
 name: Victor Chibotaru
 role: ENGINEER

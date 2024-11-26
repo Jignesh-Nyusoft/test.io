@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Veselin 
 name: Veselin Raychev
 role: CHIEF ARCHITECT

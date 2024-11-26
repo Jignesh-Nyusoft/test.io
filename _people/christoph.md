@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Christoph
 name: Christoph Blumschein
 role: ENGINEER

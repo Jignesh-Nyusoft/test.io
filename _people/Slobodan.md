@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Slobodan
 name: Slobodan Jenko
 role: Master's Student

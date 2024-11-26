@@ -1,4 +1,5 @@
 ---
+layout: default
 key: yann 
 name: Yann Girsberger
 role: ENGINEER

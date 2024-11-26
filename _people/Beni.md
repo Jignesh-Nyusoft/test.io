@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Beni
 name: Dr. Beni Bichsel
 role: Co-Founder and CEO

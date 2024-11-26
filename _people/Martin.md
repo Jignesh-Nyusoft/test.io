@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Martin
 name: Prof. Martin Vechev
 role: Co-Founder and Advisor

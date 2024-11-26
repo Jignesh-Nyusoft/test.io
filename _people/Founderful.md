@@ -1,4 +1,5 @@
 ---
+layout: default
 key: Founderful_investor
 name: Founderful
 role: Investor
