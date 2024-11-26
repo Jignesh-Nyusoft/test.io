@@ -34,8 +34,10 @@ google_tag_manager_container_id: GTM-WBM46568
 
 plugins:
   - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
 
-  
-paginate: 3 
+
+paginate: 6
 paginate_path: "news/page:num"
  
