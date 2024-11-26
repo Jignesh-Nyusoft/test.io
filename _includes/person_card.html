@@ -15,21 +15,21 @@
 
     <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
         <div class="team_boxes">
-            <div class="team_img" data-bs-toggle="modal" data-bs-target="#modal{{ person.key }}">
-            <img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
+            <div class="team_img" data-bs-toggle="modal" data-bs-target="#modal{{ people.key }}">
+            <img src="{{ site.baseurl }}/{{ people.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
             </div>   
             <div class="parent_content">
                 <div class="team_content">
                     <div class="left_content">
-                        <h4 class="team_name"> <a href="{{ person.link }}" >{{ person.name }}</a></h4>
-                        <p class="position"> {{ person.role }} </p>
+                        <h4 class="team_name"> <a href="{{ people.link }}" >{{ person.name }}</a></h4>
+                        <p class="position"> {{ people.role }} </p>
                     </div>
-                    <a href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
+                    <a href="{{ people.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
                 </div> 
-                {% assign content = person.content | strip_newlines %}
-                {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
+                {% assign content = people.content | strip_newlines %}
+                {% if content != "" %} <p class="short_content">{{ people.content | markdownify }}</p> {% endif %}
             </div>
-            <div class="modal fade" id="modal{{ person.key }}" tabindex="-1">
+            <div class="modal fade" id="modal{{ people.key }}" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header ms-auto border-0">
@@ -45,20 +45,20 @@
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="popup_img">
-                                            <img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
+                                            <img src="{{ site.baseurl }}/{{ people.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
                                         </div>
                                     </div>
                                     <div class="col-md-7">
                                         <div class="popup_content">
                                             <h3 class="popup_title">
                                                 <!-- <h4 class="team_name">  -->
-                                                    <a href="{{ person.link }}" >{{ person.name }}</a>
+                                                    <a href="{{ people.link }}" >{{ people.name }}</a>
                                                 <!-- </h4> -->
                                             </h3>
-                                            <p class="position"> {{ person.role }} </p>
+                                            <p class="position"> {{ people.role }} </p>
                                             <div>
-                                                {% assign content = person.content | strip_newlines %}
-                                                {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
+                                                {% assign content = people.content | strip_newlines %}
+                                                {% if content != "" %} <p class="short_content">{{ people.content | markdownify }}</p> {% endif %}
                                             </div>
                                         </div>
                                     </div>
