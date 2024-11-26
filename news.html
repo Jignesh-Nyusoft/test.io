@@ -49,11 +49,11 @@ pagination: true
 
 
 
-<div class="home news_listing_sec">
+<div class="news_listing_sec">
   <div class="container">
     <h2 class="main-title text-center">Explore More Insights</h2>
     <div class="row">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:6 %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <div  class="card_box">
@@ -84,13 +84,15 @@ pagination: true
       {% endfor %}
      </div>
      <div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-      {% endif %}
-      <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% endif %}
+      <!-- {% if paginator.previous_page %} -->
+      <a href="#" class="prev disable"> << Prev</a>
+      <!-- {% endif %} -->
+      <a href="#" class="active">1</a>
+      <a href="#" class="">2</a>
+      <a href="#" class="">3</a>
+      <!-- {% if paginator.next_page %} -->
+      <a href="#" class="next">Next >> </a>
+      <!-- {% endif %} -->
     </div>
   </div>
 </div>
