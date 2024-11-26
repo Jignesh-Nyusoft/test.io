@@ -850,15 +850,13 @@ color: #434D64;
 /*======== news banner section design ========*/
 
 .banner_section {
-  /* background-image: url(../images/website/common-banner-bg.svg); */
   padding: 65px 0 57px;
   background-size: cover;
-
   position: relative;
   overflow-x: hidden;
-  -webkit-gradient: (linear, left top, right bottom,     color-stop(0.00,  rgb(255 253 241)));
   z-index: 0;
 }
+
 .banner_section:before {
   content: '';
   background: url(../images/website/common-banner-bg.svg);
@@ -869,10 +867,33 @@ color: #434D64;
   height: 100%;
   z-index: 0;
   background-repeat: no-repeat;
-  /* left: 50%; */
   transform: translateX(-50%);
   background-size: cover;
 }
+
+.banner_section:after {
+  content: '';
+  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%);
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: -280px; /* Start off the screen */
+  left: 0;
+  animation: slideDown 3s ease-in-out forwards;
+}
+
+/* Keyframes for Animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .banner_title {
   font-family: 'Ubuntu';
@@ -1928,33 +1949,11 @@ body.newsdetail .banner_section{
   transform: translateY(0); /* Move to its original position */
 }
 
-.fade-down-bg {
-  /* background-image: url(../images/website/gradient.svg);  */
-  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%); background-size: 200% 200%; /* Oversized background for smooth animation */
-  background-position: 0% 50%; /* Start position */
-  opacity: 0; /* Start hidden */
-  transform: translateY(-30px); /* Move background upwards initially */
-  transition: opacity 3s ease-out, transform 3s ease-out;
-}
-
-.fade-down-bg.visible {
-  background-position: 100% 50%; /* End position */
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Move background to its original position */
-  animation: gradient-shift 3s ease-out;
-}
 .popup_content p.short_content+p a{
   color: #EC963C;
 }
 
-@keyframes gradient-shift {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 100% 50%;
-  }
-}
+
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
