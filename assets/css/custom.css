@@ -1930,14 +1930,16 @@ body.newsdetail .banner_section{
 
 .fade-down-bg {
   /* background-image: url(../images/website/gradient.svg);  */
-  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%);
-  opacity: 0;
+  background: linear-gradient(360deg, #FFFDF1 0%, #ffffff00 100%); background-size: 200% 200%; /* Oversized background for smooth animation */
+  background-position: 0% 50%; /* Start position */
+  opacity: 0; /* Start hidden */
   transform: translateY(-30px); /* Move background upwards initially */
   transition: opacity 3s ease-out, transform 3s ease-out;
 }
 
 .fade-down-bg.visible {
-  opacity: 1;
+  background-position: 100% 50%; /* End position */
+  opacity: 1; /* Fully visible */
   transform: translateY(0); /* Move background to its original position */
   animation: gradient-shift 3s ease-out;
 }
