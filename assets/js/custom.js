@@ -150,4 +150,25 @@ $(document).ready(function() {
 
   // Run it immediately on page load
   checkFadeUp();
+
+  function checkFadeDown() {
+    $('.banner_section').each(function() {
+      var top_of_element = $(this).offset().top;
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_screen = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_screen > top_of_element && $(window).scrollTop() < bottom_of_element) {
+        $(this).addClass('visible');
+      }
+    });
+  }
+
+  // Run checkFadeDown on page load and scroll
+  $(window).on('scroll', function() {
+    checkFadeDown();
+  });
+
+  // Run it immediately on page load
+  checkFadeDown();
+
 });
