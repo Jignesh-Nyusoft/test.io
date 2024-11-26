@@ -33,9 +33,7 @@ google_tag_manager_container_id: GTM-WBM46568
 #       output: true
 
 plugins:
-  - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
 
 
 paginate: 6
