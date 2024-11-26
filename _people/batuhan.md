@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Batuhan
+key: batuhan
 name: Batuhan Tomekce
 role: MSC CANDIDATE
 image: "assets/images/website/team/batuhan-512.jpeg"

@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Playfair_investor
+key: playfair_investor
 name: Playfair Capital
 role: Investor
 image: "assets/images/website/team/Playfair_Logo.png"

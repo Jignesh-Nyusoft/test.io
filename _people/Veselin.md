@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Veselin 
+key: veselin 
 name: Veselin Raychev
 role: CHIEF ARCHITECT
 image: "/assets/images/website/team/veselin-512.jpeg"

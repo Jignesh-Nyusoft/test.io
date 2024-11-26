@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Marlene
+key: marlene
 name: Marlene Brakhane
 role: Co-Founder and COO
 image: assets/images/website/team/NetFabric_MarleneBrakhane.png

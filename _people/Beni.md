@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Beni
+key: beni
 name: Dr. Beni Bichsel
 role: Co-Founder and CEO
 image: "assets/images/website/team/NetFabric_BenjaminBichsel.png"

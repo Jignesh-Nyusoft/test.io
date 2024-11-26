@@ -1,6 +1,6 @@
 ---
 layout: default
-key: OpenRoles
+key: openRoles
 name: Open Roles
 role: 
 image: "assets/images/website/team/JoinUs.png"

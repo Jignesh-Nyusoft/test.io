@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Simon
+key: simon
 name: Dr. Simon Scherrer
 role: Lead Network Engineer
 image: assets/images/website/team/NetFabric_SimonScherrer.png

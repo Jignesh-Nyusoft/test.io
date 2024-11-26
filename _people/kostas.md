@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Kostas
+key: kostas
 name: Konstantinos Vergopoulos
 role: MSC CANDIDATE
 image: "assets/images/website/team/kostas-512.jpeg"

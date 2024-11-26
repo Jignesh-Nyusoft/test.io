@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Tobias
+key: tobias
 name: Dr. Tobias Bühler
 role: Co-Founder and CTO
 image: "assets/images/website/team/NetFabric_TobiasBühler.png"

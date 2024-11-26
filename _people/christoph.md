@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Christoph
+key: christoph
 name: Christoph Blumschein
 role: ENGINEER
 image: "assets/images/website/team/christoph-512.jpeg"

@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Mark
+key: mark
 name: Mark Müller
 role: CTO
 image: "/assets/images/website/team/mark-512.jpeg"

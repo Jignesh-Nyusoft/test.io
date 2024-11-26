@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Laurent
+key: laurent
 name: Prof. Laurent Vanbever
 role: Co-Founder and Chief Scientist
 image: "/assets/images/website/team/Laurent.jpg"

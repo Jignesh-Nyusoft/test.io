@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Slobodan
+key: slobodan
 name: Slobodan Jenko
 role: Master's Student
 image: 'assets/images/website/team/NetFabric_SlobodanJenko.png'

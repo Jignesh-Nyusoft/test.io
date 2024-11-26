@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Martin
+key: martin
 name: Prof. Martin Vechev
 role: Co-Founder and Advisor
 image: "assets/images/website/team/martin-512.jpeg"

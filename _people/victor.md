@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Victor 
+key: victor 
 name: Victor Chibotaru
 role: ENGINEER
 image: "/assets/images/website/team/victor-512.jpeg"

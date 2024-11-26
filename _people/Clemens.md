@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Clemens
+key: clemens
 name: Clemens Klopfstein
 role: Junior Software Engineer
 image: "assets/images/website/team/NetFabric_ClemensKlopfstein.png"

@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Shiduo
+key: shiduo
 name: Shiduo Xin
 role: Master's Student
 image: "assets/images/website/team/NetFabric_ShiduoXin.png"

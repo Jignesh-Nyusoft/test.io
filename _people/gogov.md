@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Gogov
+key: gogov
 name: Martin Gogov
 role: CPO
 image: "assets/images/website/team/gogov-512.jpeg"

@@ -1,6 +1,6 @@
 ---
 layout: default
-key: Boris
+key: boris
 name: Boris Paskalev
 role: Co-Founder and Advisor
 image: "/assets/images/website/team/boris-512.jpeg"
