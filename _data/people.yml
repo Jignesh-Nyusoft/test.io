@@ -1,0 +1,131 @@
+- key: batuhan
+  name: Batuhan Kaya
+  role: Developer
+  image: assets/images/team/batuhan.jpg
+  link: https://linkedin.com/in/batuhan
+  content: Batuhan is an MSc candidate at ETH Zurich, where he also completed his BSc in Information Technology and Electrical Engineering. He is pursuing his MSc with LogicStar AG as an industry partner of ETH Zurich. Currently, he works as a Research Assistant to Professor Elliott Ash, contributing to advanced research in his field.
+- key: beni
+  name: Dr. Beni Bichsel
+  role: Co-Founder and CEO
+  image: "assets/images/website/team/NetFabric_BenjaminBichsel.png"
+  link: https://www.linkedin.com/in/bichselb
+  content: Beni holds a PhD from ETH Zurich, where he worked to eliminate programming complexity in various domains. Before his PhD, he graduated with the best master's degree in CS from ETH Zurich.
+- key: boris
+  name: Boris Becker
+  role: Designer
+  image: assets/images/team/boris.jpg
+  link: https://linkedin.com/in/boris
+  content: Boris has scaled ideas and systems from greenfield to profitability. As a series entrepreneur, he most recently co-founded DeepCode, which was later acquired by Snyk.
+- key: Christoph
+  name: Christoph Blumschein
+  role: ENGINEER
+  image: "assets/images/website/team/christoph-512.jpeg"
+  link: https://www.linkedin.com/in/christoph-blumschein-450980193
+  content: Christoph Blumschein is a software engineer with a focus on program analysis, compiler technology, and performance optimization. He holds an M.Sc. in IT-Systems Engineering from <a href="https://hpi.de/en/">Hasso Plattner Institute in Potsdam, Germany</a>, and a B.Sc. in Computer Science from <a href="https://www.tu.berlin/en/">TU Berlin</a>, both achieved with distinction. He began gaining industry experience in the automotive sector, and after completing his studies, he further developed his C++ expertise at <a href="https://www.think-cell.com/en">think-cell</a>. Now, he is enthusiastic about exploring the potential of practical program synthesis using large language models.
+- key: Clemens
+  name: Clemens Klopfstein
+  role: Junior Software Engineer
+  image: "assets/images/website/team/NetFabric_ClemensKlopfstein.png"
+  content: Clemens received his MSc Degree in Computer Science from ETH Zürich in 2024. In his studies he focused on Data Management Systems and Networking, while also gaining first industry experience as a part-time software engineer at the pre-seed startup Rivia.
+- key: Founderful_investor
+  name: Founderful
+  role: Investor
+  image: "assets/images/website/team/Founderful_Logo.png"
+  link: https://www.founderful.com/
+- key: Gogov
+  name: Martin Gogov
+  role: CPO
+  image: "assets/images/website/team/gogov-512.jpeg"
+  link: https://www.linkedin.com/in/martingogov/
+  content: Former CTO of TransportAPI with a BSc & MSc in Informatics and Innovations from Sofia University.Martin is an experienced professional with a robust background in technology, having served as the CTO of TransportAPI. He holds a BSc and MSc in Informatics and Innovations from Sofia University St. Kliment Ohridski. With his co-founder experience, Martin is dedicated to building products that customers love and is passionate about collaborating with users to deliver impactful projects.
+- key: OpenRoles
+  name: Open Roles
+  role: 
+  image: "assets/images/website/team/JoinUs.png"
+  link: /company/careers
+  content: At NetFabric, we're always on the lookout for talented individuals who share our vision of transforming network monitoring and management.
+- key: Kostas
+  name: Konstantinos Vergopoulos
+  role: MSC CANDIDATE
+  image: "assets/images/website/team/kostas-512.jpeg"
+  link: https://www.linkedin.com/in/martingogov/
+  content: MSc candidate at ETH Zurich, with a BSc and MSc from Aristotle University of Thessaloniki (AUTH).Kostas is an MSc candidate at ETH Zurich. He previously completed his BSc and MSc at Aristotle University of Thessaloniki (AUTH), where his thesis focused on “Analyzing code bugs based on method call graphs.” He is currently pursuing his MSc with LogicStar AG as an industry partner of ETH Zurich.
+- key: Laurent
+  name: Prof. Laurent Vanbever
+  role: Co-Founder and Chief Scientist
+  image: "/assets/images/website/team/Laurent.jpg"
+  link: https://nsg.ee.ethz.ch/people/laurent-vanbever/
+  content: Laurent is a professor at ETH Zurich. He has extensive experience analyzing computer networks, having authored 100+ publications and received multiple research grants.
+- key: Mark
+  name: Mark Müller
+  role: CTO
+  image: "/assets/images/website/team/mark-512.jpeg"
+  link: https://www.linkedin.com/in/mark-m%C3%BCller-8bb4b1140/
+  content: PhD from <a href="https://ethz.ch/">ETH Zurich</a>, 15+ papers and 400+ citations. Notable industry collaborations.
+  PhD from <a href="https://ethz.ch/">ETH Zurich</a> with a focus on provable guarantees for machine learning. Conducted PhD research on new analysis tools for real-world neural networks, resulting in 15+ papers and 400+ citations. Industry collaborations with Porsche, Mercedes, Airbus, and SBB. Awarded best Master’s and Bachelor’s degrees in Aerospace Engineering.
+- key: Marlene
+  name: Marlene Brakhane
+  role: Co-Founder and COO
+  image: assets/images/website/team/NetFabric_MarleneBrakhane.png
+  link: https://www.linkedin.com/in/marlene-brakhane/
+  content: Marlene has a proven track record in scaling, transforming, and exiting startups from Seed to Series F stages. Previously, she led operations, business lines, and strategic initiatives in both startups and corporations.
+- key: Martin
+  name: Prof. Martin Vechev
+  role: Co-Founder and Advisor
+  image: "assets/images/website/team/martin-512.jpeg"
+  link: https://www.linkedin.com/in/martinvechev/
+  content: Professor at ETH Zurich. 200+ publications in AI, networking, programming paradigms and others.
+- key: musti
+  name: Mustafa Zeqiri
+  role: ENGINEER
+  image: "assets/images/website/team/musti-512.jpeg"
+  link: https://www.linkedin.com/in/mustafa-zeqiri-856858274/
+  content: MSc from ETH Zurich, developed novel AI solutions for solving IQ tests. Mustafa, who holds a master’s degree in Electrical Engineering from ETH Zurich, has focused his studies on signal processing, artificial intelligence, and robust machine learning. He has contributed to developing novel AI solutions for solving IQ tests and is now dedicated to discovering innovative ways to reduce the bug workload for developers with AI.
+- key: Playfair_investor
+  name: Playfair Capital
+  role: Investor
+  image: "assets/images/website/team/Playfair_Logo.png"
+  link: https://playfair.vc/
+  content: 
+- key: Shiduo
+  name: Shiduo Xin
+  role: Master's Student
+  image: "assets/images/website/team/NetFabric_ShiduoXin.png"
+  link: https://www.linkedin.com/in/shiduo-xin/
+  content: Shiduo is a Master’s student in Electrical Engineering and Information Technology at ETH Zurich, where he worked on Hetereogeneous Hardware Acceleration for Database Operators. 
+- key: Simon
+  name: Dr. Simon Scherrer
+  role: Lead Network Engineer
+  image: assets/images/website/team/NetFabric_SimonScherrer.png
+  link: https://www.linkedin.com/in/simon-scherrer-2385b5174/
+  content: Simon holds a PhD from ETH Zurich, where he researched network congestion based on mathematical models, and developed network-monitoring algorithms based on statistical techniques.
+- key: Slobodan
+  name: Slobodan Jenko
+  role: Master's Student
+  image: 'assets/images/website/team/NetFabric_SlobodanJenko.png'
+  link: https://www.linkedin.com/in/slobodan-jenko-466370172/
+  content: Slobodan is a Master’s student at ETH Zurich, where he worked on research projects in Machine Learning. He has completed 4 internships across big tech and startups. 
+- key: Tobias
+  name: Dr. Tobias Bühler
+  role: Co-Founder and CTO
+  image: "assets/images/website/team/NetFabric_TobiasBühler.png"
+  link: https://www.linkedin.com/in/buehlert/
+  content: Tobias holds a PhD from ETH Zurich, where he created new network monitoring tools using real-world network data, based on various industry collaborations.
+- key: Veselin 
+  name: Veselin Raychev
+  role: CHIEF ARCHITECT
+  image: "/assets/images/website/team/veselin-512.jpeg"
+  link: https://www.linkedin.com/in/veseli
+  content: Serial entrepreneur, top researcher, co-founder of DeepCode (acquired by Snyk), PhD from ETH Zurich.
+- key: Victor 
+  name: Victor Chibotaru
+  role: ENGINEER
+  image: "/assets/images/website/team/victor-512.jpeg"
+  link: https://www.linkedin.com/in/chib0/
+  content: ML &amp; logical programming paradigms expert, early DeepCode employee, Staff Eng. at Snyk, MSc from ETH Zurich.
+- key: yann 
+  name: Yann Girsberger
+  role: ENGINEER
+  image: "/assets/images/website/team/yann-512.jpeg"
+  link: https://www.linkedin.com/in/ywgirs/
+  content: Technologist, former researcher & doctoral student in the Advanced Software Technologies Lab at ETH Zurich.

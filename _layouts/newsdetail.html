@@ -6,20 +6,21 @@ bodyClass: "newsdetail"
 <div class="news-detail-page">
     <div class="container">
         <div class="back-link">
-             <a href="/news/"><i class="icon-arrow-left"></i> Back to News List</a>
+             <a href="/news/"><i class="icon icon-icon-3"></i> Back to News List</a>
          </div>
 
         <!-- News Content -->
         <article class="news-content">
-            <div class="news-header">
-            <p class="news-date">{{ page.date | date: "%d %b %Y" }}</p>
-            <h1 class="news-title">{{ page.title }}</h1>
-            </div>
-            {% if page.image %}
+          {% if page.image %}
             <div class="news-image">
             <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
             </div>
             {% endif %}
+            <div class="news-header">
+            <p class="news-date">{{ page.date | date: "%d %b %Y" }}</p>
+            <h1 class="news-title">{{ page.title }}</h1>
+            </div>
+            
             <div class="news-body">
             {{ page.content | markdownify }}
             </div>
@@ -28,7 +29,7 @@ bodyClass: "newsdetail"
 </div>
 
 
-<div class="home news_listing_sec">
+<div class="news_listing_sec">
     <div class="container">
       <h2 class="main-title text-center">
         Explore All Our Latest News!
