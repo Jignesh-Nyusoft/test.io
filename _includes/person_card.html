@@ -1,8 +1,19 @@
-{% assign person = site.people | where: "key", include.key | first %}
+<!-- {% assign person = site.people | where: "key", include.key | first %}
 
 {% if person == nil %}
-<!-- Warning: Person not found -->
+
+{% else %} -->
+
+
+
+<p>Searching for person with key: {{ include.key }}</p>
+{% assign person = site.people | where: "key", include.key | first %}
+{% if person == nil %}
+    <!-- Warning: Person not found -->
+    <p>Person not found for key: {{ include.key }}</p>
 {% else %}
+    <!-- Existing card code here -->
+
 <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
     <div class="team_boxes">
         <div class="team_img" data-bs-toggle="modal" data-bs-target="#modal{{ person.key }}">
