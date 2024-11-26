@@ -8,7 +8,42 @@ pagination: true
 
 <!-- ================ latest banner design start ================== -->
 
-
+<div class="latest_banner">
+  <h2 class="latestpost_title">
+      What’s New
+  </h2>
+  <div class="row ">
+    {% for post in site.posts limit:1 %}
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="card">
+        <div class="card_box">
+          <div class="square-container">
+            {% if post.image %}
+            <img
+            src="{{ post.image | relative_url }}"
+              class="card-img-top"
+              alt="{{ post.title }}"
+            />
+            {% endif %}
+          </div>
+          <div class="card-body">
+            <div class="card_main_con">
+                <h3 class="card-title">{{ post.title }}</h3>
+                <p class="card-text">{{ post.short }}</p>
+            </div>
+            <div class="card-date">
+              <small class="text-muted"
+                >{{ post.date | date: "%B %d, %Y" }}</small
+              >
+              <a class="link" href="{{ post.url | relative_url }}">Read More <i class="icon icon-icon-2"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+    </div>
+</div>
 
 <!-- ================ latest banner design end ================== -->
 
@@ -18,7 +53,7 @@ pagination: true
   <div class="container">
     <h2 class="main-title text-center">Explore More Insights</h2>
     <div class="row">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <div  class="card_box">
