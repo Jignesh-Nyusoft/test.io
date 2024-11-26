@@ -871,12 +871,14 @@ color: #434D64;
   background-size: cover;
 }
 
-.banner_title{
+.banner_title {
   font-family: 'Ubuntu';
   font-size: 48px;
   font-weight: 500;
   line-height: 55.15px;
   text-align: center;
+  position: relative;
+  z-index: 11;
 }
 
 .latest_banner{
@@ -1835,6 +1837,10 @@ z-index: 111;
 
 
 @media only screen and (max-width: 991px){
+  .address_section .row {
+    row-gap: 20px;
+}
+
   /* .hero-banner .row .col-lg-5 {
       order: 1;
   }
