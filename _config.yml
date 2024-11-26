@@ -30,6 +30,6 @@ collections:
   news:
     output: true
     #  permalink: /post/:title/
-    people:
+    our-team:
       output: true
  
