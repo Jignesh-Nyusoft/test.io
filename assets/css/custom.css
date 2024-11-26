@@ -1848,8 +1848,18 @@ body.newsdetail .banner_section{
   height: 100%;
   object-fit: cover;
 }
-.news-detail-page a{
+.news-detail-page a {
   color: #EC963C !important;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.news-detail-page .news-body a {
+  color: #EC963C !important;
+  display: inline-block;
+  gap: 0;
+  align-items: center;
 }
 
 .newsdetail .news_listing_sec{
@@ -1869,6 +1879,14 @@ body.newsdetail .banner_section{
 }
 .back-link .icon::before{
   font-size: 12px;
+}
+
+.title-sentence {
+  text-align: left;
+}
+
+.title-sentence strong{
+  color: #EC963C;
 }
 
 @media only screen and (max-width:1440px){
