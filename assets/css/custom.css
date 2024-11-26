@@ -1888,6 +1888,10 @@ body.newsdetail .banner_section{
 .title-sentence strong{
   color: #EC963C;
 }
+.meet_team_sec.teampage_team p.short_content+p a{
+  color: #EC963C; 
+}
+
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
