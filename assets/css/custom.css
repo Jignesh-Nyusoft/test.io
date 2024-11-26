@@ -1939,9 +1939,19 @@ body.newsdetail .banner_section{
 .fade-down-bg.visible {
   opacity: 1;
   transform: translateY(0); /* Move background to its original position */
+  animation: gradient-shift 3s ease-out;
 }
 .popup_content p.short_content+p a{
   color: #EC963C;
+}
+
+@keyframes gradient-shift {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }
 
 @media only screen and (max-width:1440px){
