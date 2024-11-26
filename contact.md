@@ -91,27 +91,27 @@ title: Contact Us
                         <i class="icon icon-icon-11"></i>
                     </div>
                     <div class="address_content">
-                        <p>LogicStar AG, Konradstrasse 20, 8005 Zürich, Switzerland</p>
+                        <p class="box_link">LogicStar AG, Konradstrasse 20, 8005 Zürich, Switzerland</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="address_box">
-                    <div class="address_icon">
+                    <a class="address_icon" href="https://www.linkedin.com/in/bpaskalev/">
                         <i class="icon icon-icon-12"></i>
-                    </div>
+                    </a>
                     <div class="address_content">
-                        <p>@borispaskalev</p>
+                        <a class="box_link" href="https://www.linkedin.com/in/bpaskalev/">@borispaskalev</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="address_box">
-                    <div class="address_icon">
+                    <a class="address_icon" href="mailto:info@logicstar.ai">
                         <i class="icon icon-icon-13"></i>
-                    </div>
+                    </a>
                     <div class="address_content">
-                        <p>info@logicstar.ai </p>
+                        <a class="box_link" href="mailto:info@logicstar.ai">info@logicstar.ai </a>
                     </div>
                 </div>
             </div>

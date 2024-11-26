@@ -580,6 +580,7 @@ align-items-center .no-link-style:hover,
   padding-bottom: 40px;
   position: relative;
   overflow-x: hidden;
+  margin-top: 23px;
   overflow-y: visible;
 }
 ul.check_list li {
@@ -681,6 +682,8 @@ color: #434D64;
   box-shadow: inset 10px 10px 280px 2px #0000001c;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+
+  min-height: 356px;
 }
 .company_logo{
   background: #ffffff83;
@@ -1427,7 +1430,8 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   max-width: 1200px;
 }
 
-.meet_team_sec.teampage_team p.short_content+p {
+.meet_team_sec.teampage_team p.short_content+p ,
+.team_boxes p.short_content+p {
   width: 100%;
   flex-basis: 100%;
   font-family: 'Ubuntu';
@@ -1481,7 +1485,8 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   height: 100%;
   object-fit: cover;
 }
-.meet_team_sec.teampage_team .modal p.short_content+p {
+.meet_team_sec.teampage_team .modal p.short_content+p,
+.team_boxes .modal p.short_content+p{
   margin-top: 24px;
   padding-top: 24px;
   -webkit-line-clamp: 10;
@@ -1736,7 +1741,7 @@ text-decoration-line: underline;
   min-height: 100%;
   background: #ffffff;
 }
-.address_content p{
+.address_content .box_link{
   font-family: 'Ubuntu';
   font-size: 16px;
   font-weight: 400;
@@ -1745,7 +1750,12 @@ text-decoration-line: underline;
   color: #14213D;
   margin-top: 16px;
   margin-bottom: 0;
+  text-decoration: none !important;
 }
+.address_content .address_icon{
+  text-decoration: none !important;
+}
+
 .address_section{
   margin: 80px 0;
 }
@@ -1892,6 +1902,10 @@ body.newsdetail .banner_section{
   color: #EC963C; 
 }
 
+.team_main_sec .left_side {
+  text-align: right;
+}
+
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -1914,7 +1928,23 @@ body.newsdetail .banner_section{
   transform: translateY(0); /* Move to its original position */
 }
 
+.fade-down-bg {
+  background-image: url('/assets/images/website/gradient.svg'); /* Add your background image */
+  background-position: center top; /* Start position */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translateY(-30px); /* Move background upwards initially */
+  transition: opacity 3s ease-out, transform 3s ease-out;
+}
 
+.fade-down-bg.visible {
+  opacity: 1;
+  transform: translateY(0); /* Move background to its original position */
+}
+.popup_content p.short_content+p a{
+  color: #EC963C;
+}
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
@@ -1949,6 +1979,9 @@ body.newsdetail .banner_section{
 @media only screen and (max-width: 991px){
   .address_section .row {
     row-gap: 20px;
+}
+.team_main_sec .left_side {
+  text-align: center;
 }
 
   /* .hero-banner .row .col-lg-5 {

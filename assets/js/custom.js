@@ -128,47 +128,22 @@ $(window).on("scroll touchmove", function() {
 });
 
 
-
 $(document).ready(function() {
-  // Function to check if the element is in the viewport
-  function checkFadeUp() {
-    $('.banner_section').each(function() {
-      var top_of_element = $(this).offset().top;
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_screen = $(window).scrollTop() + $(window).height();
-
-      if (bottom_of_screen > top_of_element && $(window).scrollTop() < bottom_of_element) {
-        $(this).addClass('visible');
-      }
-    });
-  }
-
-  // Run checkFadeUp on page load and scroll
-  $(window).on('scroll', function() {
-    checkFadeUp();
-  });
-
-  // Run it immediately on page load
-  checkFadeUp();
-
   function checkFadeDown() {
-    $('.banner_section').each(function() {
+    $('.fade-down-bg').each(function() {
       var top_of_element = $(this).offset().top;
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
       var bottom_of_screen = $(window).scrollTop() + $(window).height();
 
-      if (bottom_of_screen > top_of_element && $(window).scrollTop() < bottom_of_element) {
+      if (bottom_of_screen > top_of_element) {
         $(this).addClass('visible');
       }
     });
   }
 
-  // Run checkFadeDown on page load and scroll
   $(window).on('scroll', function() {
     checkFadeDown();
   });
 
   // Run it immediately on page load
   checkFadeDown();
-
 });

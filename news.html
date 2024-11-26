@@ -53,7 +53,7 @@ pagination: true
   <div class="container">
     <h2 class="main-title text-center">Explore More Insights</h2>
     <div class="row">
-      {% for post in site.posts limit:6 %}
+      {% for post in site.posts %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <div  class="card_box">
@@ -83,17 +83,13 @@ pagination: true
       </div>
       {% endfor %}
      </div>
-     <div class="pagination">
-      <!-- {% if paginator.previous_page %} -->
+     <!-- <div class="pagination">
       <a href="#" class="prev disable"> << Prev</a>
-      <!-- {% endif %} -->
       <a href="#" class="active">1</a>
       <a href="#" class="">2</a>
       <a href="#" class="">3</a>
-      <!-- {% if paginator.next_page %} -->
       <a href="#" class="next">Next >> </a>
-      <!-- {% endif %} -->
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -108,7 +104,7 @@ pagination: true
           Ready to Transform Your <br>Software Development?
       </h2>
       <p class="software_para">Discover how our AI-driven solutions can streamline your bug resolution process and enhance your team's productivity. Get in touch today! Contact Us to schedule a demo or learn more about our offerings!</p>
-      <a class="btn btn-styled" href="" role="button">Contact Us</a>
+      <a class="btn btn-styled" href="{{ site.baseurl }}/contact/" role="button">Contact Us</a>
     </div>
   </div>
 </div>

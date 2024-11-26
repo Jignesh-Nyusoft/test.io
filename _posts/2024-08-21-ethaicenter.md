@@ -7,7 +7,7 @@ image : "/assets/images/website/postimges/post-img-2.jpeg"
 
 ---
 
-![image]({{ site.url }}{{ site.baseurl }}/assets/images/webisite/postimges/post-img-1.jpeg)
+![image]({{ site.url }}{{ site.baseurl }}/assets/images/webisite/postimges/post-img-1.png)
 
 We’re excited to announce that NetFabric is now an official affiliate of the ETH Zurich AI Center! This partnership is a significant milestone for us, especially since many of our team members have deep roots in AI research at ETH.
 
