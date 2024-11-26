@@ -11,9 +11,9 @@
 
 {% if person == nil %}
     <!-- Warning: Person not found -->
-    <p>Person not found for key: {{ include.key }}</p>
-{% else %}
-     <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
+    <!-- <p>Person not found for key: {{ include.key }}</p> -->
+
+    <div class="col-lg-4 col-md-4 col-sm-6 mb-3">
         <div class="team_boxes">
             <div class="team_img" data-bs-toggle="modal" data-bs-target="#modal{{ person.key }}">
             <img src="{{ site.baseurl }}/{{ person.image | default: 'assets/images/team/default.svg' }}" class="card-img-top img-fluid grayscale-on-hover" alt="{{ person.name }}">
@@ -87,6 +87,8 @@
                 {% endif %}
             </div>
         </div> -->
-    </div> 
+    </div>
+{% else %}
+    
 {% endif %}
 
