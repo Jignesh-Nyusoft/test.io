@@ -1772,6 +1772,7 @@ text-decoration-line: underline;
   margin-top: 16px;
   margin-bottom: 0;
   text-decoration: none !important;
+  display: inline-block;
 }
 .address_content .address_icon{
   text-decoration: none !important;
