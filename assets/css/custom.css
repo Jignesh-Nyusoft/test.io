@@ -2022,6 +2022,12 @@ body.newsdetail .banner_section{
   display: none;
 }
 
+.news-body h3 {
+  color: #ec963c;
+  text-decoration: none;
+}
+
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;

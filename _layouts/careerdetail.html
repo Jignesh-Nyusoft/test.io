@@ -1,0 +1,44 @@
+---
+layout: default
+bodyClass: "careerdetails"
+---
+<div class="news-detail-page">
+    <div class="container">
+        <div class="back-link">
+             <a href="{{ site.baseurl }}/news/"><i class="icon icon-icon-3"></i> Back to Career List</a>
+         </div>
+
+        <!-- News Content -->
+        <article class="news-content">
+          {% if page.image %}
+            <div class="news-image">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+            </div>
+            {% endif %}
+            <div class="news-header">
+            <p class="news-date">{{ page.date | date: "%d %b %Y" }}</p>
+            <h1 class="news-title">{{ page.title }}</h1>
+            </div>
+            
+            <div class="news-body">
+            {{ page.content | markdownify }}
+            </div>
+        </article>
+    </div>
+</div>
+
+
+
+
+
+<div class="software_main_sec">
+    <div class="container">
+      <div class="softwaredev_section">
+        <h2 class="main-title">
+            Ready to Transform Your <br>Software Development?
+        </h2>
+        <p class="software_para">Discover how our AI-driven solutions can streamline your bug resolution process and enhance your team's productivity. Get in touch today! Contact Us to schedule a demo or learn more about our offerings!</p>
+        <a class="btn btn-styled" href="{{ site.baseurl }}/contact/" role="button">Contact Us</a>
+      </div>
+    </div>
+  </div>

@@ -9,6 +9,8 @@ page_link:
     url: news
   - meta_title: Contact Us
     url: contact
+    - meta_title: Careers
+    url: careers
 
 
 social_icon:

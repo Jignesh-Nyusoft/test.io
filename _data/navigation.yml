@@ -4,8 +4,11 @@
   url: our-company
 - meta_title: Our Team
   url: our-team    
+- meta_title: Careers
+  url: careers
 - meta_title: Our News
   url: news
+
 
 # - meta_title: Company
 #   subtitles:

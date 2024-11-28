@@ -3,7 +3,7 @@ title: "Senior Cloud Application Developer"
 short: We are looking for a passionate software engineer with experience in building and testing cloud-based applications.
 date: 2024-07-01
 layout: newsdetail
-image: "images/logo/mascot.png"
+image: "/assets/images/website/career/software.jpg"
 ---
 
 If interested, please send your resume to jobs@logicstar.ai . We do not accept unsolicited resumes from recruiters or agencies.
