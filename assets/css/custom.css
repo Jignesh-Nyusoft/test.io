@@ -1900,7 +1900,8 @@ body.careerdetails .banner_section{
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #cdcdcd;
 }
 .news-detail-page a {
   color: #EC963C !important;
@@ -2039,8 +2040,10 @@ body.careerdetails .banner_section{
 
 .careerpage .latest_banner .card-text{
   font-size: 16px;
+  color: #333333;
 }
-.careerpage .news_listing_sec .card{
+.careerpage .news_listing_sec .card,
+.careerdetails .news_listing_sec .card{
   padding: 20px;
 } 
 .careerpage .card_box {
@@ -2050,7 +2053,8 @@ body.careerdetails .banner_section{
 .careerpage .card-text{
   -webkit-line-clamp: 3;
 }
-.careerpage .card-body{
+.careerpage .card-body,
+.careerdetails .card-body{
   padding: 4px 16px 0px;
   min-height: auto;
   display: flex;
@@ -2060,21 +2064,26 @@ body.careerdetails .banner_section{
   flex-basis: 82%;
   min-height: 162px;
 }
-.careerpage .square-container{
+.careerpage .square-container,
+.careerdetails .square-container{
   position: relative;
   border-radius: 12px;
   flex-basis: 18%;
   overflow: hidden;
-
+padding: initial;
 }
-.careerpage  .square-container img {
+.careerpage  .square-container img,
+.careerdetails .square-container img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 10px;
+  position: static;
 }
 
-
+.careerpage .latest_banner .card-body {
+  min-height: auto;
+}
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;
@@ -2365,7 +2374,8 @@ button.navbar-toggler {
    display: block;
   }
 
-  .careerpage .latest_banner .card_box{
+  .careerpage .latest_banner .card_box,
+  .careerdetails .card_box{
     display: flex;
    }
 
