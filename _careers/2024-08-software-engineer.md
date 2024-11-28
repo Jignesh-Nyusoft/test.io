@@ -2,7 +2,7 @@
 title: "Software Engineer"
 short: We are looking for a passionate software engineer with interesting in AI/ML.
 date: 2024-08-20
-layout: newsdetail
+layout: careerdetail
 image: "/assets/images/website/career/software.jpg"
 ---
 

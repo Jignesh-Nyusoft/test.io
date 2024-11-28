@@ -2,7 +2,7 @@
 title: "Senior Cloud Application Developer"
 short: We are looking for a passionate software engineer with experience in building and testing cloud-based applications.
 date: 2024-07-01
-layout: newsdetail
+layout: careerdetail
 image: "/assets/images/website/career/software.jpg"
 ---
 

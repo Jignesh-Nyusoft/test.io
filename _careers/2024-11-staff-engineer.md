@@ -2,7 +2,7 @@
 title: "Staff Software Engineer"
 short: We are seeking an experienced software engineer to work in our growing team on building and deploying cutting-edge products.
 date: 2024-11-25
-layout: newsdetail
+layout: careerdetail
 image: "/assets/images/website/career/software.jpg"
 ---
 
