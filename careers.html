@@ -1,40 +1,40 @@
 ---
 layout: default
 title: Career
-nav_active: career
+nav_active: careers
 ---
 
 
 <!-- ================ latest banner design start ================== -->
 
 <div class="latest_banner">
-  <h2 class="latestcareer_title">
+  <h2 class="latestcareers_title">
       What’s New
   </h2>
   <div class="row ">
-    {% for career in site.careers limit:1 %}
+    {% for careers in site.careers limit:1 %}
     <div class="col-lg-4 col-md-6 col-12">
       <div class="card">
         <div class="card_box">
           <div class="square-container">
-            {% if career.image %}
+            {% if careers.image %}
             <img
-            src="{{ career.image | relative_url }}"
+            src="{{ careers.image | relative_url }}"
               class="card-img-top"
-              alt="{{ career.title }}"
+              alt="{{ careers.title }}"
             />
             {% endif %}
           </div>
           <div class="card-body">
             <div class="card_main_con">
-                <h3 class="card-title">{{ career.title }}</h3>
-                <p class="card-text">{{ career.short }}</p>
+                <h3 class="card-title">{{ careers.title }}</h3>
+                <p class="card-text">{{ careers.short }}</p>
             </div>
             <div class="card-date">
               <small class="text-muted"
-                >{{ career.date | date: "%B %d, %Y" }}</small
+                >{{ careers.date | date: "%B %d, %Y" }}</small
               >
-              <a href="{{ career.url | relative_url }}" class="link">Read More <i class="icon icon-icon-2"></i> </a>
+              <a href="{{ careers.url | relative_url }}" class="link">Read More <i class="icon icon-icon-2"></i> </a>
             </div>
           </div>
         </div>
@@ -52,29 +52,29 @@ nav_active: career
   <div class="container">
     <h2 class="main-title text-center">Explore More Insights</h2>
     <div class="row">
-      {% for career in site.careers %}
+      {% for careers in site.careers %}
       <div class="col-lg-4 col-md-6 col-12">
         <div class="card">
           <div  class="card_box">
-            {% if career.image %}
+            {% if careers.image %}
             <div class="square-container">
               <img
-                src="{{ career.image | relative_url }}"
+                src="{{ careers.image | relative_url }}"
                 class="card-img-top"
-                alt="{{ career.title }}"
+                alt="{{ careers.title }}"
               />
               {% endif %}
             </div>
             <div class="card-body">
               <div class="card_main_con">
-                  <h3 class="card-title">{{ career.title }}</h3>
-                  <p class="card-text">{{ career.short }}</p>
+                  <h3 class="card-title">{{ careers.title }}</h3>
+                  <p class="card-text">{{ careers.short }}</p>
               </div>
               <div class="card-date">
                 <small class="text-muted"
-                  >{{ career.date | date: "%B %d, %Y" }}</small
+                  >{{ careers.date | date: "%B %d, %Y" }}</small
                 >
-                <a href="{{ career.url | relative_url }}" class="link">Read More <i class="icon icon-icon-2"></i> </a>
+                <a href="{{ careers.url | relative_url }}" class="link">Read More <i class="icon icon-icon-2"></i> </a>
               </div>
             </div>
           </div>
