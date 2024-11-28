@@ -14,6 +14,7 @@ collections:
 # Permalink structure for _posts
 permalink: /news/:title/
 
+
 baseurl: ""
 
 timezone: Europe/Zurich

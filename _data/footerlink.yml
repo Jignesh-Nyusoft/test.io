@@ -9,7 +9,7 @@ page_link:
     url: news
   - meta_title: Contact Us
     url: contact
-    - meta_title: Careers
+  - meta_title: Careers
     url: careers
 
 
