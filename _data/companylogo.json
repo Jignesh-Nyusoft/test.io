@@ -1,45 +1,45 @@
 [
     {
       "image": {
-        "url": "/assets/images/website/Logo/skype.png"
+        "url": "/assets/images/website/Logo/benetics.svg"
       },
-      "name" : "Skype"
+      "name" : "Benetics"
     },
     {
         "image": {
-            "url": "/assets/images/website/Logo/google.png"
+            "url": "/assets/images/website/Logo/googledm.png"
         },
-        "name" : "Google"
+        "name" : "Google DeepMind"
     },
     {
         "image": {
-            "url": "/assets/images/website/Logo/nvidia.png"
+            "url": "/assets/images/website/Logo/ellipsis_logo.png"
         },
-        "name" : "Nvindia"
+        "name" : "Elipsis"
     },
     {
         "image": {
-            "url": "/assets/images/website/Logo/tesla.png"
+            "url": "/assets/images/website/Logo/fleet.png"
         },
-        "name" : "Tesla"
+        "name" : "Fleet"
     },
     {
         "image": {
-            "url": "/assets/images/website/Logo/microsoft.png"
+            "url": "/assets/images/website/Logo/spotify_logo.png"
         },
-        "name" : "Microsoft"
+        "name" : "Spotify"
     },
     {
         "image": {
-            "url": "/assets/images/website/Logo/apple.png"
+            "url": "/assets/images/website/Logo/sequoia.jpg"
         },
-        "name" : "Apple"
+        "name" : "Sequoia"
     },
     {
         "image": {
-            "url": "/assets/images/website/Logo/amazon.png"
+            "url": "/assets/images/website/Logo/northzone.png"
         },
-        "name" : "Amazon"
+        "name" : "Northzone"
     }
     
   ]

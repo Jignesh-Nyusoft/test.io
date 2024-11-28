@@ -21,7 +21,7 @@
         <div class="parent_content">
             <div class="team_content">
                 <div class="left_content">
-                    <h4 class="team_name"> <a href="{{ person.link }}" >{{ person.name }}</a></h4>
+                    <h4 class="team_name"> {{ person.name }}</h4>
                     <p class="position"> {{ person.role }} </p>
                 </div>
                 <a href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
@@ -50,12 +50,19 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="popup_content">
-                                        <div class="popup_title">
+                                        <!-- <div class="popup_title">
                                             <h4 class="team_name"> 
                                                 <a href="{{ person.link }}" >{{ person.name }}</a>
                                             </h4>
                                         </div>
-                                        <p class="position"> {{ person.role }} </p>
+                                        <p class="position"> {{ person.role }} </p> -->
+                                        <div class="team_content">
+                                            <div class="left_content">
+                                                <h4 class="team_name"> {{ person.name }}</h4>
+                                                <p class="position"> {{ person.role }} </p>
+                                            </div>
+                                            <a href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
+                                        </div>
                                         <div>
                                             {% assign content = person.content | strip_newlines %}
                                             {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}

@@ -3,6 +3,7 @@
 //////////////////
 function replaceMailTags() {
   // Get all <mail> elements
+
   var mailElements = document.getElementsByTagName('mail');
 
   // Convert NodeList to array to avoid live updating
@@ -26,15 +27,16 @@ function replaceMailTags() {
       aElement.removeAttribute('to');
       aElement.removeAttribute('class');
       aElement.innerHTML = mailElement.innerHTML;
-      aElement.href = 'mailto:' + toAttribute + '@netfabric.ai';
+      aElement.href = 'mailto:' + toAttribute + '@logicstar.ai/';
 
       if (aElement.getAttribute('addBody') == "true") {
-          aElement.innerHTML = toAttribute + '@netfabric.ai';
+          aElement.innerHTML = toAttribute + '@logicstar.ai/';
       }
 
       // Replace <mail> with <a>
       mailElement.parentNode.replaceChild(aElement, mailElement);
-  });
+     
+    });
 }
 
 // Call the function when the document is fully loaded

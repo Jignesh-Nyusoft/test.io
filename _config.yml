@@ -8,6 +8,8 @@ collections:
     permalink: /jobs/:name/
   quotes:
     output: true
+  careers:
+    output: true
 
 # Permalink structure for _posts
 permalink: /news/:title/

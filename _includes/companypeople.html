@@ -15,10 +15,10 @@
         </div>
         <div class="team_content">
             <div class="left_content">
-                <h4 class="team_name"> <a href="" >{{ copeople.name }}</a></h4>
+                <h4 class="team_name"> {{ copeople.name }}</h4>
                 <p class="position"> {{ copeople.role }} </p>
             </div>
-            <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
+            <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt="linkedin"></a>
         </div>
         <div class="modal fade" id="modal{{ copeople.key }}" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
@@ -41,10 +41,17 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="popup_content">
-                                        <h3 class="popup_title">
+                                        <!-- <h3 class="popup_title">
                                             <h4 class="team_name"> <a href="{{ copeople.link }}" >{{ copeople.name }}</a></h4>
                                         </h3>
-                                        <p class="position"> {{ copeople.role }} </p>
+                                        <p class="position"> {{ copeople.role }} </p> -->
+                                        <div class="team_content">
+                                            <div class="left_content">
+                                                <h4 class="team_name"> {{ copeople.name }}</h4>
+                                                <p class="position"> {{ copeople.role }} </p>
+                                            </div>
+                                            <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//linked-in.svg" alt=""></a>
+                                        </div>
                                         <div>
                                             {% assign content = copeople.content | strip_newlines %}
                                             {% if content != "" %} <p class="short_content">{{ copeople.content | markdownify }}</p> {% endif %}
