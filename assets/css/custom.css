@@ -2046,9 +2046,15 @@ body.careerdetails .banner_section{
 .careerdetails .news_listing_sec .card{
   padding: 20px;
 } 
-.careerpage .card_box {
+.careerpage .card_box,
+.careerdetails .card_box {
   display: flex;
 }
+.careerpage .card-date,
+.careerdetails .card-date{
+  margin-top: 0;
+}
+
 
 .careerpage .card-text{
   -webkit-line-clamp: 3;
@@ -2374,8 +2380,7 @@ button.navbar-toggler {
    display: block;
   }
 
-  .careerpage .latest_banner .card_box,
-  .careerdetails .card_box{
+  .careerpage .latest_banner .card_box{
     display: flex;
    }
 
