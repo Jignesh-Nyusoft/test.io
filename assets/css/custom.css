@@ -1859,10 +1859,12 @@ z-index: 111;
 
 /* news detail page css */
 
-body.newsdetail h2.banner_title {
+body.newsdetail h2.banner_title,
+body.careerdetails h2.banner_title {
   display: none;
 }
-body.newsdetail .banner_section{
+body.newsdetail .banner_section,
+body.careerdetails .banner_section{
   height: 280px;
 }
 .back-link a{
@@ -2027,6 +2029,9 @@ body.newsdetail .banner_section{
   text-decoration: none;
 }
 
+.careerpage .latest_banner .square-container {
+  padding: 8.75% 10.2%;
+}
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
@@ -2317,6 +2322,13 @@ button.navbar-toggler {
   .latest_banner .card_box{
    display: block;
   }
+
+  .careerpage .latest_banner .card_box{
+    display: flex;
+   }
+
+
+
   .latest_banner .square-container {
     padding: 33.5%;
 }
@@ -2390,5 +2402,12 @@ button.navbar-toggler {
   .hero-content .btn-styled{
       font-size: 16px;
     }
+    .careerpage .latest_banner .card_box{
+      display: block;
+     }
+     .careerpage .latest_banner .square-container {
+      padding: 28.75% 10.2%;
+  }
+  
     
 }

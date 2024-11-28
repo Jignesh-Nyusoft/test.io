@@ -21,13 +21,60 @@ bodyClass: "careerdetails"
             </div>
             
             <div class="news-body">
-            {{ page.content | markdownify }}a
+            {{ page.content | markdownify }}
             </div>
         </article>
     </div>
 </div>
 
 
+<div class="news_listing_sec">
+  <div class="container">
+    <h2 class="main-title text-center">
+      Explore All Our Latest News!
+  </h2>
+
+    <div class="row">
+      {% for careers in site.careers limit:3 %}
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card">
+          <div href="{{ careers.url }}" class="card_box">
+          
+            <div class="square-container">
+              {% if careers.image %}
+              <img
+              src="{{ careers.image | relative_url }}"
+                class="card-img-top"
+                alt="{{ careers.title }}"
+              />
+              {% endif %}
+            </div>
+           
+            <div class="card-body">
+              <div class="card_main_con">
+                  <h3 class="card-title">{{ careers.title }}</h3>
+                  <p class="card-text">{{ careers.short }}</p>
+              </div>
+              <div class="card-date">
+                <small class="text-muted"
+                  >{{ careers.date | date: "%B %d, %Y" }}</small
+                >
+                <a class="link" href="{{ careers.url | relative_url }}">Read More <i class="icon icon-icon-2"></i> </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="text-center">
+      <a href="{{ site.baseurl }}/news/" class="btn btn-styled">View All</a>
+    </div>
+  </div>
+  </div>
+</div>
 
 
 

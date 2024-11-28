@@ -2,14 +2,15 @@
 layout: default
 title: Careers
 nav_active: careers
+bodyClass: careerpage
 ---
 
 
 <!-- ================ latest banner design start ================== -->
 
 <div class="latest_banner">
-  <h2 class="latestcareers_title text-center">
-      What’s New
+  <h2 class="latestcareers_title text-center pb-3">
+    Apply to work with us
   </h2>
   <div class="row ">
     {% for careers in site.careers limit:1 %}
@@ -27,14 +28,8 @@ nav_active: careers
           </div>
           <div class="card-body">
             <div class="card_main_con">
-                <h3 class="card-title">{{ careers.title }}</h3>
-                <p class="card-text">{{ careers.short }}</p>
-            </div>
-            <div class="card-date">
-              <small class="text-muted"
-                >{{ careers.date | date: "%B %d, %Y" }}</small
-              >
-              <a href="{{ careers.url | relative_url }}" class="link">Read More <i class="icon icon-icon-2"></i> </a>
+                <!-- <h3 class="card-title">We are an equal opportunity employer.</h3> -->
+                <p class="card-text">We are an equal opportunity employer. <br> Registered in Switzerland. Our office is located at Konradstrasse 20, 8005 Zürich. <br> For job applications, please send your resume to jobs@logicstar.ai . We do not accept unsolicited resumes from recruiters or employment agencies.</p>
             </div>
           </div>
         </div>
