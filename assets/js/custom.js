@@ -112,6 +112,30 @@ $(document).ready(function() {
     }
   })
 
+
+  $(document).ready(function() {
+    // Get the current page URL
+    var currentUrl = window.location.pathname;
+  
+    // Check if the current URL is '/website/' for the Home page
+    if (currentUrl === '/website/' || currentUrl === '/website') {
+      // Add 'active' class to the Home link
+      $('.nav-link[href="/website/"]').addClass('active');
+    }
+  
+    // Check for other navigation items and add 'active' class as needed
+    $('.nav-link').each(function() {
+      var linkUrl = $(this).attr('href'); // Get the link's href
+  
+      // If the link's href matches the current URL, add 'active'
+      if (currentUrl === linkUrl || currentUrl.includes(linkUrl)) {
+        $(this).addClass('active');
+      }
+    });
+  });
+  
+
+
  
     $('.navbar-toggler.collapsed').click(function() {
         $('.navbar-toggler > span').addClass('close-btn');
