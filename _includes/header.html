@@ -1,59 +1,42 @@
 <nav class="navbar navbar-expand-lg bg-white navbar-light">
   <div class="container">
     <a class="navbar-brand" href="{{ site.baseurl }}">
-      <img src="{{ site.baseurl }}/assets/images/website/dark-logo.svg" alt="logicstar Logo" height="40">
+      <img src="{{ site.baseurl }}/assets/images/website/dark-logo.svg" alt="LogicStar Logo" height="40">
     </a>
     <button class="navbar-toggler collpased" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      <!-- <span class="btn-close" type="button"></span> -->
-
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center">
         {% for item in site.data.navigation %}
           {% if item.subtitles %}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle {% if page.title == item.url %}active{% endif %}" href="#" id="navbarDropdown{{ forloop.index }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ item.meta_title }}
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown{{ forloop.index }}">
-              {% for subtitle in item.subtitles %}
-                <li><a class="dropdown-item {% if page.title == subtitle.url %}active{% endif %}" href="{{ site.baseurl }}/{{ subtitle.url }}">{{ subtitle.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% else %}
-        <li class="nav-item">
-          <a class="nav-link 
-            {% if page.url == site.baseurl or page.url == site.baseurl | append: '/' %}active{% endif %}
-            {% if page.url == site.baseurl | append: item.url %}active{% endif %}
-            {% if page.url == site.baseurl | append: '/' and item.url == '' %}active{% endif %}"
-            href="{{ site.baseurl }}/{{ item.url }}">
-            {{ item.meta_title }}
-          </a>
-        </li>
-        
-          <!-- <li class="nav-item">
-            <a class="nav-link 
-              {% if page.nav_active == item.url or 
-                    (page.url == site.baseurl and item.url == '') or 
-                    (page.layout == 'newsdetail' and item.url == 'news') or 
-                    (page.layout == 'careerdetail' and item.url == 'careers') %}active{% endif %}" 
-              href="{{ site.baseurl }}/{{ item.url }}">{{ item.url | capitalize }}
-            </a>
-          </li> -->
-
-            <!-- <li class="nav-item">
-              <a class="nav-link {% if page.url == item.url or page.url contains item.url %}active{% endif %}" href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}</a>
-            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle {% if page.url == site.baseurl | append: '/' or page.url == item.url %}active{% endif %}" href="#" id="navbarDropdown{{ forloop.index }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ item.meta_title }}
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown{{ forloop.index }}">
+                {% for subtitle in item.subtitles %}
+                  <li><a class="dropdown-item {% if page.url == site.baseurl | append: '/' or page.url == subtitle.url %}active{% endif %}" href="{{ site.baseurl }}/{{ subtitle.url }}">{{ subtitle.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link 
+                {% if page.url == site.baseurl or page.url == site.baseurl | append: '/' %}active{% endif %}
+                {% if page.url == site.baseurl | append: item.url %}active{% endif %}
+                {% if page.url == site.baseurl | append: '/' and item.url == '' %}active{% endif %}"
+                href="{{ site.baseurl }}/{{ item.url }}">
+                {{ item.meta_title }}
+              </a>
+            </li>
           {% endif %}
         {% endfor %}
-
-
+        
         <!-- Contact us button -->
         <li class="nav-item">
           <a id="btn-header-keep-me-updated" class="btn btn-styled" href="{{ site.baseurl }}/contact" role="button">Contact Us</a>
-        </li>        
+        </li>
       </ul>
     </div>
   </div>
