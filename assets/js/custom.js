@@ -115,7 +115,24 @@ $(document).ready(function() {
 
 
   
-
+  $(document).ready(function() {
+    // Get the current page URL (pathname without the domain)
+    var currentUrl = window.location.pathname;
+  
+    // Remove 'active' class from all nav items to ensure only one is active
+    $('.nav-link').removeClass('active');
+  
+    // Loop through each nav link and check if it matches the current URL
+    $('.nav-link').each(function() {
+      var linkUrl = $(this).attr('href'); // Get the link's href
+  
+      // Check if the current page is the home page or if the current page is a subpage of the link
+      if (currentUrl === linkUrl || currentUrl === linkUrl + "/" || currentUrl.startsWith(linkUrl + "/")) {
+        $(this).addClass('active');
+      }
+    });
+  });
+  
 
  
     $('.navbar-toggler.collapsed').click(function() {
