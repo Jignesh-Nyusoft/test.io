@@ -15,8 +15,8 @@ title: Contact Us
                     <h2 class="main_title">We're Here to Help You, Connect with LogicStar AI</h2>
                     <p>Have questions, need support, or just want to learn more?</p>
                 </div>
-<form name="contact" method="POST"  action="https://formcarry.com/s/K5berIi3mIV" > 
-                <!-- <form id="contactForm">/ -->
+<!-- <form name="contact" method="POST"  action="" >  -->
+                <form id="contactForm">/
         <div class="row">
             <div class="col-lg-6"> 
                 <div class="form-group">

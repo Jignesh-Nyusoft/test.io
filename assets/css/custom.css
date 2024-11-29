@@ -2129,6 +2129,10 @@ padding: initial;
   padding-top: 20px;
 }
 
+.meet_team_sec.teampage_team .modal p.short_content+p.shotdis {
+  display: none;
+}
+
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
       margin-right: 0;

@@ -68,4 +68,35 @@
 
 </body>
 
+
+
+
+<script>
+    $(document).ready(function() {
+      $('#contactForm').submit(function(event) {
+        event.preventDefault(); 
+
+        var form = $(this);
+        var formData = form.serialize(); 
+
+        $.ajax({
+          url: 'https://formcarry.com/s/K5berIi3mIV',
+          type: 'POST',
+          data: formData,
+          success: function(response) {
+            $('#contactForm').hide();
+            $('#thankYouMessage').show();
+            // Optional: redirect after a delay
+            setTimeout(function() {
+              window.location.href = 'https://logicstar.ai/website/contact-success/';
+            }, 2000);
+          },
+          error: function(xhr, status, error) {
+            window.location.href = 'https://logicstar.ai/website/contact-success/';
+          }
+        });
+      });
+    });
+</script>
+
 </html>
