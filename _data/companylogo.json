@@ -31,16 +31,17 @@
     },
     {
         "image": {
+            "url": "/assets/images/website/Logo/northzone.png"
+        },
+        "name" : "Northzone"
+    },   
+    {
+        "image": {
             "url": "/assets/images/website/Logo/sequoia.jpg"
         },
         "name" : "Sequoia"
     },
-    {
-        "image": {
-            "url": "/assets/images/website/Logo/northzone.png"
-        },
-        "name" : "Northzone"
-    }
+    
     
   ]
   

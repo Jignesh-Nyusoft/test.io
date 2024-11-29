@@ -86,11 +86,11 @@ title: Contact Us
             </div>
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="address_box">
-                    <a class="address_icon" href="https://www.linkedin.com/in/bpaskalev/">
+                    <a class="address_icon" href="https://www.linkedin.com/company/logicstar-ai/">
                         <i class="icon icon-icon-12"></i>
                     </a>
                     <div class="address_content">
-                        <a class="box_link" href="https://www.linkedin.com/in/bpaskalev/">@borispaskalev</a>
+                        <a class="box_link" href="https://www.linkedin.com/company/logicstar-ai/">@LogicStar-AI</a>
                     </div>
                 </div>
             </div>

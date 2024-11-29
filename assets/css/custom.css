@@ -2038,6 +2038,13 @@ body.careerdetails .banner_section{
   min-height: auto;
 }
 
+.careerpage .latest_banner .card-body .card-text{
+  display: flex;
+  justify-content: center;
+}
+
+
+
 .careerpage .latest_banner .card-text{
   font-size: 16px;
   color: #333333;
@@ -2301,6 +2308,35 @@ button.navbar-toggler {
 }
 
 @media only screen and (max-width: 767px) {
+  .careerpage .latest_banner{
+    padding: 20px;
+  }
+
+  .careerpage .square-container, .careerdetails .square-container{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .careerpage .card-body, .careerdetails .card-body {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.careerpage .card_box, .careerdetails .card_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.careerpage .card_box, .careerdetails .card_box h3.card-title,
+.careerpage .card-text, .careerdetails .card-text{
+  text-align: center;
+}
+
+.careerpage .card-body .card-date{
+  margin-top: 10px;
+}
+
+.careerpage .card-body, .careerdetails .card-body{
+  min-height: auto;
+}
   .modal .modal-header {
     margin-top: -12px;
     margin-right: -17px;
