@@ -3,7 +3,49 @@ layout: newsdetail
 bodyClass: "newsdetail"
 nav_active: news
 ---
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>LogicStar | {{ page.title }}</title>
+
+    {% include google_analytics.html %}
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/website/icons/favicon.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/website/icons/favicon.ico" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph Meta Tags (social media sharing) -->
+    <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}LogicStar AI | {{ page.title }}{% endif %}" />
+    <meta property="og:description" content="LogicStar AI System for Reproducing and Fixing Bugs in Commercial Applications." />
+    <meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}LogicStar AI | {{ page.title }}{% endif %}" />
+    <meta name="twitter:card" content="{{ site.url }}{{ page.og_image }}" />
+    <meta name="twitter:description" content="LogicStar AI System for Reproducing and Fixing Bugs in Commercial Applications." />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.og_image}}" />
+    
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100 page {{layout.bodyClass}}" >
+  {% include header.html %}  
+  
+<div class="inner_pages">
+  <div class="banner_section fade-down-bg">
+      <h2 class="banner_title">{{page.title}}</h2>
+  </div>
 <div class="news-detail-page">
     <div class="container">
         <div class="back-link">
@@ -90,3 +132,39 @@ nav_active: news
       </div>
     </div>
   </div>
+
+</div>
+
+
+
+
+{% include footer.html %}  
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
+
+  <link href="{{ site.baseurl }}/assets/css/fontawesome-all.min.css" rel="stylesheet">
+
+
+
+
+  <!-- Custom scripts -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/ubuntu/stylesheet.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/responsive.css">
+
+
+  <script src="{{ site.baseurl }}/assets/js/owl.carousel.js"> </script>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/owl.carousel.min.css">
+
+  <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+
+
+
+  {% include cookie_consent.html %}
+
+</body>
+
+</html>
