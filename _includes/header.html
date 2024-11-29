@@ -23,11 +23,19 @@
             </ul>
           </li>
         {% else %}
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link 
             {% if page.url == '/' and item.url == '' %}active{% endif %}
             {% if page.nav_active == item.url and item.meta_title != 'Home' %}active{% endif %}" 
             href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}
+          </a>
+        </li> -->
+        
+        <li class="nav-item">
+          <a class="nav-link 
+            {% if (page.url == '/' and item.url == '') or (page.nav_active == item.url) %}active{% endif %}
+          " href="{{ site.baseurl }}/{{ item.url }}">
+            {{ item.meta_title }}
           </a>
         </li>
         
