@@ -27,8 +27,8 @@
           <a class="nav-link 
             {% if page.nav_active == item.url or 
                   (page.url == '/' and item.meta_title == 'Home') or 
-                  (item.meta_title == 'Careers' and page.layout == 'careerdetail') or 
-                  (item.meta_title == 'Our News' and page.layout == 'newsdetail') %}active{% endif %}" 
+                  (page.url == 'careers' and page.layout == 'careerdetail') or 
+                  (page.url == 'news' and page.layout == 'newsdetail') %}active{% endif %}" 
             href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}
           </a>
         </li>
