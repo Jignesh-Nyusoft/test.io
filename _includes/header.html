@@ -25,13 +25,12 @@
         {% else %}
         <li class="nav-item">
           <a class="nav-link 
-            {% if page.nav_active == item.url or 
-                 (page.url == '/' and item.meta_title == 'Home') or 
-                 (page.layout == 'newsdetail' and item.meta_title == 'Our News') or 
-                 (page.layout == 'careerdetail' and item.meta_title == 'Careers') %}active{% endif %}" 
+            {% if page.url == '/' and item.url == '' %}active{% endif %}
+            {% if page.nav_active == item.url and item.meta_title != 'Home' %}active{% endif %}" 
             href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}
           </a>
         </li>
+        
         
         
 
