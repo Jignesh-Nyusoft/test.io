@@ -117,17 +117,14 @@ $(document).ready(function() {
     // Get the current page URL
     var currentUrl = window.location.pathname;
   
-    // Check if the current URL is '/website/' for the Home page
-    if (currentUrl === '/website/' || currentUrl === '/website') {
-      // Add 'active' class to the Home link
-      $('.nav-link[href="/website/"]').addClass('active');
-    }
+    // Remove 'active' class from all nav items to ensure only one is active
+    $('.nav-link').removeClass('active');
   
-    // Check for other navigation items and add 'active' class as needed
+    // Loop through each nav link and check if it matches the current URL
     $('.nav-link').each(function() {
       var linkUrl = $(this).attr('href'); // Get the link's href
   
-      // If the link's href matches the current URL, add 'active'
+      // If the link's URL matches the current page's URL or contains it, add 'active'
       if (currentUrl === linkUrl || currentUrl.includes(linkUrl)) {
         $(this).addClass('active');
       }
