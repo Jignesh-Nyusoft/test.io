@@ -113,28 +113,7 @@ $(document).ready(function() {
   })
 
 
-  $(document).ready(function() {
-    // Get the current page URL
-    var currentUrl = window.location.pathname;
-  
-    // Remove 'active' class from all nav items to ensure only one is active
-    $('.nav-link').removeClass('active');
-  
-    // Check if the current page URL is the homepage (e.g., '/website/')
-    if (currentUrl === '/test.io/' || currentUrl === '/') {
-      $('.nav-link[href="/test.io/"]').addClass('active');
-    } else {
-      // Loop through each nav link and check if it matches the current URL
-      $('.nav-link').each(function() {
-        var linkUrl = $(this).attr('href'); // Get the link's href
-  
-        // If the current URL starts with the link URL (for subpages)
-        if (currentUrl.startsWith(linkUrl)) {
-          $(this).addClass('active');
-        }
-      });
-    }
-  });
+
   
 
 
