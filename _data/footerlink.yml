@@ -15,17 +15,17 @@ page_link:
 
 social_icon:
   - icon_class: icon-icon-5
-    url: #,
-    name: Facebook
+    url: #
+    name: facebook
   - icon_class: icon-icon-6
     url: #,
     name: Instagram  
   - icon_class: icon-icon-7
-    url: https://x.com/logic_star_ai,
+    url: https://x.com/logic_star_ai
     name: Twitter  
   - icon_class: icon-icon-8
-    url: https://www.linkedin.com/company/logicstar-ai,
+    url: https://www.linkedin.com/company/logicstar-ai/
     name: linkedin 
   - icon_class: icon-icon-9
-    url: https://github.com/logic-star-ai,
+    url: https://github.com/logic-star-ai
     name: Github         

@@ -8,6 +8,10 @@
   url: careers
 - meta_title: Our News
   url: news
+- meta_title: Newsdetail
+  url: newsdetail
+- meta_title: Careerdetail
+  url: careerdetail
 
 
 # - meta_title: Company

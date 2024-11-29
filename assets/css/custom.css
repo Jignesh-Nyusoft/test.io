@@ -1373,7 +1373,7 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
 .meet_team_sec .team_content {
   padding: 24px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -1426,7 +1426,7 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
   box-shadow: 0 0 267px #ec963c36;
 }
 .meet_team_sec{
@@ -1482,6 +1482,11 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   overflow: hidden;
   -webkit-box-orient: vertical;
 }
+
+.meet_team_sec.teampage_team p.short_content ~ p.shotdis {
+  -webkit-line-clamp: 3;
+}
+
 
 .meet_team_sec.teampage_team .parent_content{
   padding: 24px;
@@ -1560,7 +1565,7 @@ nav.navbar.navbar-expand-lg.bg-white.navbar-light.sticky-top .nav-link {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  z-index: 0;
+  z-index: -1;
   box-shadow: 0 0 267px #ec963c36;
 }
 
