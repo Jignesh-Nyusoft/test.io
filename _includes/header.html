@@ -26,10 +26,13 @@
         <li class="nav-item">
           <a class="nav-link 
             {% if page.nav_active == item.url or 
-                  (page.url == '/' and item.meta_title == 'Home') %}active{% endif %}" 
+                  (page.url == '/' and item.meta_title == 'Home') or 
+                  (item.url == 'careers' and page.nav_active == 'careers') or 
+                  (item.url == 'news' and page.nav_active == 'news') %}active{% endif %}" 
             href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}
           </a>
         </li>
+        
         
 
         

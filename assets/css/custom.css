@@ -2074,20 +2074,20 @@ body.careerdetails .banner_section{
 }
 .careerpage .card-body,
 .careerdetails .card-body{
-  padding: 4px 16px 0px;
+  padding: 0px 0px 0px;
   min-height: auto;
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
   justify-content: space-between;
-  flex-basis: 82%;
-  min-height: 162px;
+  flex-basis: 100%;
+  min-height: 150px;
 }
 .careerpage .square-container,
 .careerdetails .square-container{
   position: relative;
   border-radius: 12px;
-  flex-basis: 18%;
+  flex-basis: 0;
   overflow: hidden;
 padding: initial;
 }
@@ -2318,7 +2318,7 @@ button.navbar-toggler {
   }
 
   .careerpage .square-container, .careerdetails .square-container{
-    flex-basis: 100%;
+    flex-basis: 0%;
     text-align: center;
   }
   .careerpage .card-body, .careerdetails .card-body {
@@ -2332,7 +2332,7 @@ button.navbar-toggler {
 }
 .careerpage .card_box, .careerdetails .card_box h3.card-title,
 .careerpage .card-text, .careerdetails .card-text{
-  text-align: center;
+  text-align: left;
 }
 
 .careerpage .card-body .card-date{
