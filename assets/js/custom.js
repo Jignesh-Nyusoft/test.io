@@ -120,15 +120,20 @@ $(document).ready(function() {
     // Remove 'active' class from all nav items to ensure only one is active
     $('.nav-link').removeClass('active');
   
-    // Loop through each nav link and check if it matches the current URL
-    $('.nav-link').each(function() {
-      var linkUrl = $(this).attr('href'); // Get the link's href
+    // Check if the current page URL is the homepage (e.g., '/website/')
+    if (currentUrl === '/test.io/' || currentUrl === '/') {
+      $('.nav-link[href="/test.io/"]').addClass('active');
+    } else {
+      // Loop through each nav link and check if it matches the current URL
+      $('.nav-link').each(function() {
+        var linkUrl = $(this).attr('href'); // Get the link's href
   
-      // If the link's URL matches the current page's URL or contains it, add 'active'
-      if (currentUrl === linkUrl || currentUrl.includes(linkUrl)) {
-        $(this).addClass('active');
-      }
-    });
+        // If the current URL starts with the link URL (for subpages)
+        if (currentUrl.startsWith(linkUrl)) {
+          $(this).addClass('active');
+        }
+      });
+    }
   });
   
 

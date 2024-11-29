@@ -2117,7 +2117,17 @@ padding: initial;
   align-items: center;
 }
 
-
+.modal p.short_content ~ p a {
+  color: #ec963c;
+}
+.modal p.short_content +.shotdis+p {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+  border-top: 1px solid #E8E9EC;
+  padding-top: 20px;
+}
 
 @media only screen and (max-width:1440px){
   .slider_section .owl-carousel .owl-stage-outer{
