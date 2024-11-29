@@ -26,27 +26,22 @@
         <li class="nav-item">
           <a class="nav-link 
             {% if page.url == site.baseurl or page.url == site.baseurl | append: '/' %}active{% endif %}
-            {% if page.url == item.url and item.meta_title != 'Home' %}active{% endif %}" 
+            {% if page.url == site.baseurl | append: item.url %}active{% endif %}
+            {% if page.url == site.baseurl | append: '/' and item.url == '' %}active{% endif %}"
             href="{{ site.baseurl }}/{{ item.url }}">
             {{ item.meta_title }}
           </a>
         </li>
         
-        
-        
-
-        
-
-        
-<!-- <li class="nav-item">
-  <a class="nav-link 
-    {% if page.nav_active == item.url or 
-          (page.url == site.baseurl and item.url == '') or 
-          (page.layout == 'newsdetail' and item.url == 'news') or 
-          (page.layout == 'careerdetail' and item.url == 'careers') %}active{% endif %}" 
-    href="{{ site.baseurl }}/{{ item.url }}">{{ item.url | capitalize }}
-  </a>
-</li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link 
+              {% if page.nav_active == item.url or 
+                    (page.url == site.baseurl and item.url == '') or 
+                    (page.layout == 'newsdetail' and item.url == 'news') or 
+                    (page.layout == 'careerdetail' and item.url == 'careers') %}active{% endif %}" 
+              href="{{ site.baseurl }}/{{ item.url }}">{{ item.url | capitalize }}
+            </a>
+          </li> -->
 
             <!-- <li class="nav-item">
               <a class="nav-link {% if page.url == item.url or page.url contains item.url %}active{% endif %}" href="{{ site.baseurl }}/{{ item.url }}">{{ item.meta_title }}</a>
