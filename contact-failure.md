@@ -11,7 +11,7 @@ bodyclass: error
         <div class="row justify-content-center">
             <div class="col-lg-12 col-md-12 col-12">
                 <div class="check-image text-center mb-3">
-                   <img src="{{ site.baseurl }}/assets/images/website/close-tick.png" width="100px">
+                   <img src="{{ site.baseurl }}/assets/images/website/logos/close-tick.png" width="100px">
                 </div>
                 <div class="thanks_content">
                     <h1 class="text-danger text-center">Error!</h1>

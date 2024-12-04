@@ -3,33 +3,33 @@
     
       "description": "LogicStar doesn't even need to  show how you can fix a bug. Just pinpointing the exact location of the bug already saves a lot of time.",
       "image": {
-        "url": "/assets/images/website/ori.png"
+        "url": "/assets/images/website/testimonials/ori.png"
       },
       "name" : "Ori D.",
       "companylogo":{
-        "url" : "/assets/images/website/zscaler_logo_200.png"
+        "url" : "/assets/images/website/logos/zscaler_logo_200.png"
       }
     },
     {
      
       "description": "We’ve partnered with many service providers, but none have shown the same level of dedication and attention to detail as this team. They truly understand our needs and consistently deliver beyond expectations.",
       "image": {
-        "url": "/assets/images/website/john.png"
+        "url": "/assets/images/website/testimonials/john.png"
       },
       "name" : "John M.",
       "companylogo":{
-        "url" : "/assets/images/website/nvidia.png"
+        "url" : "/assets/images/website/logos/nvidia.png"
       }
     },
     {
      
       "description": "From the initial consultation to project completion, the experience has been seamless. The team's ability to understand our goals and execute flawlessly has made them a vital partner for our company.",
       "image": {
-        "url": "/assets/images/website/emily.png"
+        "url": "/assets/images/website/testimonials/emily.png"
       },
       "name" : "Emily R.",
       "companylogo":{
-        "url" : "/assets/images/website/tesla.png"
+        "url" : "/assets/images/website/logos/tesla.png"
       }
     }
   ]
