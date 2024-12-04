@@ -16,7 +16,7 @@ title: Contact Us
                     <p>Have questions, need support, or just want to learn more?</p>
                 </div>
 <!-- <form name="contact" method="POST"  action="" >  -->
-                <form id="contactForm">/
+    <form id="contactForm">
         <div class="row">
             <div class="col-lg-6"> 
                 <div class="form-group">
