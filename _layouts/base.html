@@ -30,6 +30,39 @@
     <meta name="twitter:description" content="LogicStar AI System for Reproducing and Fixing Bugs in Commercial Applications." />
     <meta name="twitter:image" content="{{ site.url }}{{ page.og_image}}" />
     
+    <script>
+
+      //<!-- Friendly Analytics -->
+      // var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      // _paq.push(['trackPageView']);
+      // _paq.push(['enableLinkTracking']);
+      // (function() {
+      //   var u="https://app.friendlyanalytics.ch/";
+      //   _paq.push(['setTrackerUrl', u+'js/tracker.php']);
+      //   _paq.push(['setSiteId', '288']);
+      //   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      //   g.async=true; g.src=u+'js/tracker.php'; s.parentNode.insertBefore(g,s);
+      // })();
+
+      //<!-- End Friendly Analytics Code -->
+
+  
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://app.friendlyanalytics.ch/";
+      _paq.push(['setTrackerUrl', u+'js/tracker.php']);
+      _paq.push(['setSiteId', '288']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'js/tracker.php'; s.parentNode.insertBefore(g,s);
+    })();
+
+  // <!-- End Friendly Analytics -->
+    
+    </script>
+
 
 
 </head>
@@ -66,6 +99,8 @@
 
   {% include cookie_consent.html %}
 
+  
+
 </body>
 
 
@@ -88,11 +123,11 @@
             $('#thankYouMessage').show();
             // Optional: redirect after a delay
             setTimeout(function() {
-              window.location.href = 'https://logicstar.ai/website/contact-success/';
+              window.location.href = 'https://logicstar.ai/contact-success/';
             }, 2000);
           },
           error: function(xhr, status, error) {
-            window.location.href = 'https://logicstar.ai/website/contact-success/';
+            window.location.href = 'https://logicstar.ai/contact-success/';
           }
         });
       });

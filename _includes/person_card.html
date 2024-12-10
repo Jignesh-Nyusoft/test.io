@@ -24,7 +24,7 @@
                     <h4 class="team_name"> {{ person.name }}</h4>
                     <p class="position"> {{ person.role }} </p>
                 </div>
-                <a href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website/logos//linked-in.svg" alt=""></a>
+                <a target="_blank" href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website/logos//linked-in.svg" alt=""></a>
             </div> 
             {% assign content = person.content | strip_newlines %}
             {% if content != "" %} <p class="short_content">{{ person.content | markdownify }}</p> {% endif %}
@@ -61,7 +61,7 @@
                                                 <h4 class="team_name"> {{ person.name }}</h4>
                                                 <p class="position"> {{ person.role }} </p>
                                             </div>
-                                            <a href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website/logos//linked-in.svg" alt=""></a>
+                                            <a target="_blank" href="{{ person.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website/logos//linked-in.svg" alt=""></a>
                                         </div>
                                         <div>
                                             {% assign content = person.content | strip_newlines %}

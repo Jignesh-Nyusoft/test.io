@@ -18,7 +18,7 @@
                 <h4 class="team_name"> {{ copeople.name }}</h4>
                 <p class="position"> {{ copeople.role }} </p>
             </div>
-            <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website/logos//linked-in.svg" alt="linkedin"></a>
+            <a target="_blank" href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website/logos//linked-in.svg" alt="linkedin"></a>
         </div>
         <div class="modal fade" id="modal{{ copeople.key }}" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
@@ -50,7 +50,7 @@
                                                 <h4 class="team_name"> {{ copeople.name }}</h4>
                                                 <p class="position"> {{ copeople.role }} </p>
                                             </div>
-                                            <a href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//logos/linked-in.svg" alt=""></a>
+                                            <a target="_blank" href="{{ copeople.link | relative_url }}"><img src="{{ site.baseurl }}/assets/images/website//logos/linked-in.svg" alt=""></a>
                                         </div>
                                         <div>
                                             {% assign content = copeople.content | strip_newlines %}

@@ -14,7 +14,7 @@ collections:
 # Permalink structure for _posts
 permalink: /news/:title/
 
-
+url: "https://logicstar.ai"
 baseurl: ""
 
 timezone: Europe/Zurich

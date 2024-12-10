@@ -14,7 +14,7 @@ bodyclass: error
                    <img src="{{ site.baseurl }}/assets/images/website/logos/close-tick.png" width="100px">
                 </div>
                 <div class="thanks_content">
-                    <h1 class="text-danger text-center">Error!</h1>
+                    <h1 class="text-danger text-center">Oops!</h1>
                     <h3>Unfortunately, we encountered an error when processing your submission. Please follow up through <mail to="info" addBody="true"></mail>.</h3>
                 </div>
             </div>

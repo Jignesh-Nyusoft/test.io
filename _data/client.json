@@ -11,25 +11,36 @@
       }
     },
     {
-     
-      "description": "We’ve partnered with many service providers, but none have shown the same level of dedication and attention to detail as this team. They truly understand our needs and consistently deliver beyond expectations.",
+    
+      "description": "If I have a bug, I'd love to have an agent that finds the right files, tries to reproduce the bug, it fixes the bug and then it verifies that it's correct so I can review it.",
       "image": {
-        "url": "/assets/images/website/testimonials/john.png"
+        "url": "/assets/images/website/testimonials/andy_48x48.png"
       },
-      "name" : "John M.",
+      "name" : "Arvid L.",
       "companylogo":{
-        "url" : "/assets/images/website/logos/nvidia.png"
+        "url" : "/assets/images/website/logos/cursor_logo200x60.png"
       }
     },
     {
      
-      "description": "From the initial consultation to project completion, the experience has been seamless. The team's ability to understand our goals and execute flawlessly has made them a vital partner for our company.",
+      "description": "Engineers often face frustration navigating the multiple combinations of inputs needed to reproduce an issue. I appreciate how LogicStar proposes to simplify the challenging task of reproducing issues, saving valuable time in MTTR.",
       "image": {
-        "url": "/assets/images/website/testimonials/emily.png"
+        "url": "/assets/images/website/testimonials/SamR.png"
       },
-      "name" : "Emily R.",
+      "name" : "Sam R.",
       "companylogo":{
-        "url" : "/assets/images/website/logos/tesla.png"
+        "url" : "/assets/images/website/logos/AeroVibe_200x60.png"
+      }
+    },
+    {
+     
+      "description": "...having 20 things that we can’t fix automatically is a bunch of noise, having 1 proposed solution that appears to fix something is much more interesting",
+      "image": {
+        "url": "/assets/images/website/testimonials/TimotyJ.png"
+      },
+      "name" : "Timoty J.",
+      "companylogo":{
+        "url" : "/assets/images/website/logos/NexisTech_200x60.png"
       }
     }
   ]

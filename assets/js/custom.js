@@ -173,3 +173,13 @@ $(document).ready(function() {
 });
 
 
+$(window).on('load', function() {
+  $('.an-loader-row').fadeOut('slow'); // Fade out the loader once the page is fully loaded
+});
+
+
+$('a[target="_blank"]').on('click', function(e) {
+  e.preventDefault(); // Prevent the default link behavior
+  const href = $(this).attr('href'); // Get the href of the link
+  window.open(href, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes'); // Open in a new window
+});

@@ -3,7 +3,7 @@ layout: default
 key: yann 
 name: Yann Girsberger
 role: ENGINEER
-image: "/assets/images/website/team/yann-512.jpeg"
+image: "assets/images/website/team/yann-512.jpeg"
 link: https://www.linkedin.com/in/ywgirs/
 ---
 

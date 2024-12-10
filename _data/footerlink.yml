@@ -1,11 +1,11 @@
 page_link:
   - meta_title: Home
     url: 
-  - meta_title: Our Company
+  - meta_title: Company
     url: our-company
-  - meta_title: Our Team
+  - meta_title: Team
     url: our-team
-  - meta_title: Our News
+  - meta_title: News
     url: news
   - meta_title: Contact Us
     url: contact
@@ -14,18 +14,11 @@ page_link:
 
 
 social_icon:
-  - icon_class: icon-icon-5
-    url: #
-    name: facebook
-  - icon_class: icon-icon-6
-    url: #,
-    name: Instagram  
-  - icon_class: icon-icon-7
-    url: #
+
     name: Twitter  
   - icon_class: icon-icon-8
-    url: https://www.linkedin.com/company/logicstar-ai/
+    url: "https://www.linkedin.com/company/logicstar-ai/"
     name: linkedin 
   - icon_class: icon-icon-9
-    url: https://github.com/logic-star-ai
+    url: "https://github.com/logic-star-ai"
     name: Github         
